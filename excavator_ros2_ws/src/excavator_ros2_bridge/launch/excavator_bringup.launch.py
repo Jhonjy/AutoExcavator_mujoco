@@ -15,16 +15,20 @@ def generate_launch_description():
     # ==================== 包路径 ====================
     pkg_share = get_package_share_directory("excavator_ros2_bridge")
 
+    # ==================== 工作区根目录 ====================
+    this_dir = os.path.dirname(os.path.abspath(__file__))
+    ws_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(this_dir))))
+
     # ==================== 启动参数 ====================
     # MuJoCo模型路径（指向原始项目的excavator.xml）
     default_model_path = os.path.join(
-        "/home/ubuntu2204/mujoco_develop",
+        ws_root,
         "excavator_simulator_mujoco", "model", "excavator", "excavator.xml"
     )
 
     # 土壤插件目录
     default_plugin_dir = os.path.join(
-        "/home/ubuntu2204/mujoco_develop",
+        ws_root,
         "excavator_simulator_mujoco", "build", "bin", "mujoco_plugin"
     )
 

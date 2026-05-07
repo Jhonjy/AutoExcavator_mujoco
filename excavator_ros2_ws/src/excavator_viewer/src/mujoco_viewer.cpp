@@ -114,8 +114,8 @@ void velocity_command_callback(
 
 void load_plugins() {
   std::string plugin_dir =
-      "/home/ubuntu2204/mujoco_develop/"
-      "excavator_simulator_mujoco/build/bin/mujoco_plugin";
+      std::string(EXCAVATOR_WS_ROOT) +
+      "/excavator_simulator_mujoco/build/bin/mujoco_plugin";
 
   std::cout << "[Viewer] 加载插件目录: " << plugin_dir << std::endl;
   mj_loadAllPluginLibraries(
@@ -224,8 +224,8 @@ int main(int argc, char** argv) {
   load_plugins();
 
   std::string model_path =
-      "/home/ubuntu2204/mujoco_develop/"
-      "excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
+      std::string(EXCAVATOR_WS_ROOT) +
+      "/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
   if (filename) model_path = filename;
 
   if (!load_model(model_path)) return 1;

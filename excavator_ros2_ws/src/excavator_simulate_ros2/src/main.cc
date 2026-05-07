@@ -127,9 +127,10 @@ void scanPluginLibraries() {
   }
 
   // 直接使用原始项目的插件目录
-  const char* plugin_dir =
-      "/home/ubuntu2204/mujoco_develop/"
-      "excavator_simulator_mujoco/build/bin/mujoco_plugin";
+  static std::string plugin_dir_str =
+      std::string(EXCAVATOR_WS_ROOT) +
+      "/excavator_simulator_mujoco/build/bin/mujoco_plugin";
+  const char* plugin_dir = plugin_dir_str.c_str();
 
   std::printf("Loading plugins from: %s\n", plugin_dir);
   mj_loadAllPluginLibraries(

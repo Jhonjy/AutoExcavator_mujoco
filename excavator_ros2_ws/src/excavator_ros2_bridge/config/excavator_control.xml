@@ -6,8 +6,8 @@
      4. 执行器驱动活塞滑动关节（不是铰链关节）
 -->
 <mujoco model="excavator_control">
-  <compiler meshdir="/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/model/excavator/mesh"
-            texturedir="/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/model/excavator/texture"/>
+  <compiler meshdir="../../../../excavator_simulator_mujoco/model/excavator/mesh"
+            texturedir="../../../../excavator_simulator_mujoco/model/excavator/texture"/>
 
   <extension>
     <plugin plugin="mujoco.soil">

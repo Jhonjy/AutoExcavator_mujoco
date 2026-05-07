@@ -1,17 +1,19 @@
 // 模拟ROS2硬件接口的MuJoCo调用流程，排查问题
 #include <mujoco/mujoco.h>
 #include <cstdio>
+#include <string>
 
 int main() {
-  const char* model_path = "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
-  const char* plugin_dir = "/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/bin/mujoco_plugin";
+  std::string ws = EXCAVATOR_WS_ROOT;
+  std::string model_path = ws + "/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
+  std::string plugin_dir = ws + "/excavator_simulator_mujoco/build/bin/mujoco_plugin";
 
   // 加载插件
-  mj_loadAllPluginLibraries(plugin_dir, nullptr);
+  mj_loadAllPluginLibraries(plugin_dir.c_str(), nullptr);
 
   // 加载模型
   char error[1024] = "";
-  mjModel* m = mj_loadXML(model_path, nullptr, error, sizeof(error));
+  mjModel* m = mj_loadXML(model_path.c_str(), nullptr, error, sizeof(error));
   if (!m) { printf("加载失败: %s\n", error); return 1; }
 
   mjData* d = mj_makeData(m);

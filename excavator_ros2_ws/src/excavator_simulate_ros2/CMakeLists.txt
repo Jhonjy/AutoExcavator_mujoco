@@ -11,13 +11,17 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # 原始项目路径
-set(MUJOCO_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../excavator_simulator_mujoco/build")
+set(EXCAVATOR_WS_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../..")
+set(MUJOCO_BUILD_DIR "${EXCAVATOR_WS_ROOT}/excavator_simulator_mujoco/build")
 set(MUJOCO_SRC_DIR "${MUJOCO_BUILD_DIR}/_deps/mujoco-src")
 
 # 所有库都在同一个目录下
 set(LIB_DIR "${MUJOCO_BUILD_DIR}/lib")
 
 add_executable(simulate_ros2 src/main.cc)
+target_compile_definitions(simulate_ros2 PRIVATE
+  EXCAVATOR_WS_ROOT="${EXCAVATOR_WS_ROOT}"
+)
 
 target_include_directories(simulate_ros2 PRIVATE
   "${MUJOCO_SRC_DIR}/include"

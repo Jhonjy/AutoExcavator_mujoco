@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 # Build all packages
 source /opt/ros/humble/setup.bash
-cd /home/ubuntu2204/mujoco_develop/excavator_ros2_ws
+cd excavator_ros2_ws
 colcon build
 
 # Build single package

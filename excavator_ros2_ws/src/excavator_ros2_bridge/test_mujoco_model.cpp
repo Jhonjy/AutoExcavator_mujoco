@@ -5,18 +5,20 @@
 #include <mujoco/mujoco.h>
 #include <cstdio>
 #include <cstring>
+#include <string>
 
 int main(int argc, char** argv) {
-  const char* model_path = "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
+  std::string ws = EXCAVATOR_WS_ROOT;
+  std::string model_path = ws + "/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml";
   if (argc > 1) model_path = argv[1];
 
   // 加载插件
-  const char* plugin_dir = "/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/bin/mujoco_plugin";
-  mj_loadAllPluginLibraries(plugin_dir, nullptr);
+  std::string plugin_dir = ws + "/excavator_simulator_mujoco/build/bin/mujoco_plugin";
+  mj_loadAllPluginLibraries(plugin_dir.c_str(), nullptr);
 
   // 加载模型
   char error[1024] = "";
-  mjModel* m = mj_loadXML(model_path, nullptr, error, sizeof(error));
+  mjModel* m = mj_loadXML(model_path.c_str(), nullptr, error, sizeof(error));
   if (!m) {
     printf("模型加载失败: %s\n", error);
     return 1;

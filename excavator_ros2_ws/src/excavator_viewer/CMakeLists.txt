@@ -10,7 +10,8 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # ==================== MuJoCo 路径 ====================
-set(MUJOCO_PROJECT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../excavator_simulator_mujoco")
+set(EXCAVATOR_WS_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../..")
+set(MUJOCO_PROJECT_DIR "${EXCAVATOR_WS_ROOT}/excavator_simulator_mujoco")
 set(MUJOCO_BUILD_DIR "${MUJOCO_PROJECT_DIR}/build")
 set(MUJOCO_INCLUDE_DIR "${MUJOCO_BUILD_DIR}/_deps/mujoco-src/include")
 set(MUJOCO_LIB_DIR "${MUJOCO_BUILD_DIR}/lib")
@@ -52,6 +53,9 @@ set_target_properties(mujoco_viewer PROPERTIES
   BUILD_RPATH "${MUJOCO_LIB_DIR}"
 )
 
+target_compile_definitions(mujoco_viewer PRIVATE
+  EXCAVATOR_WS_ROOT="${EXCAVATOR_WS_ROOT}"
+)
 ament_target_dependencies(mujoco_viewer rclcpp std_msgs)
 
 # ==================== 安装 ====================
