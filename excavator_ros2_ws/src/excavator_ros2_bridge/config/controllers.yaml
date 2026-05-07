@@ -1,0 +1,36 @@
+# ROS2 Control 控制器配置文件
+# 定义controller_manager的更新频率和可用控制器
+
+controller_manager:
+  ros__parameters:
+    # 控制频率(Hz)，与MuJoCo物理步进同步
+    update_rate: 100
+
+    # 关节状态广播器：发布/joint_states话题
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # 速度控制器：接收速度指令，驱动4个velocity执行器
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+# 关节状态广播器参数
+joint_state_broadcaster:
+  ros__parameters:
+    joints:
+      - rotation_joint
+      - boom_joint
+      - arm_joint
+      - bucket_joint
+    interfaces:
+      - position
+      - velocity
+
+# 速度控制器参数
+velocity_controller:
+  ros__parameters:
+    joints:
+      - rotation_joint
+      - boom_joint
+      - arm_joint
+      - bucket_joint

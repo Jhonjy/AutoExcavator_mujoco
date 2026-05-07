@@ -1,0 +1,32 @@
+{
+  "owner": "adityakamath",
+  "slug": "ros2-skill",
+  "displayName": "ROS 2 Skill",
+  "latest": {
+    "version": "1.0.6",
+    "publishedAt": 1774483597158,
+    "commit": "https://github.com/openclaw/skills/commit/c3fd295129f68021d81611e6ea23e342fc0c08a6"
+  },
+  "history": [
+    {
+      "version": "1.0.4",
+      "publishedAt": 1773431242738,
+      "commit": "https://github.com/openclaw/skills/commit/bb4478bf45e042557d4774af53991ffbc061b5f5"
+    },
+    {
+      "version": "1.0.3",
+      "publishedAt": 1772395251085,
+      "commit": "https://github.com/openclaw/skills/commit/d6b1ad385e7b0b624304d339722af2e3669b19cc"
+    },
+    {
+      "version": "1.0.0",
+      "publishedAt": 1772200530951,
+      "commit": "https://github.com/openclaw/skills/commit/0e9a7e6a6d5d42a44542a2d58adf0d188e51e12a"
+    },
+    {
+      "version": "1.0.2",
+      "publishedAt": 1772231696768,
+      "commit": "https://github.com/openclaw/skills/commit/177f998a1f44f74b268d85f99e2e3d0b0ebe876d"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+build/
+install/
+log/
+*.o
+*.so
+test_mujoco_model
+test_mujoco_ros2
+test_viewer_logic
