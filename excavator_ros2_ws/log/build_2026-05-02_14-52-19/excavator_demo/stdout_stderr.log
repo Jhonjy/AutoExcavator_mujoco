@@ -1,0 +1,54 @@
+Consolidate compiler generated dependencies of target demo_node
+[ 50%] Building CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/include/excavator_demo/demo_node.hpp:9,
+                 from /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:4:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp: In member function ‘void excavator_demo::DemoNode::control_loop()’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:116:39: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 5 has type ‘int’ [-Wformat=]
+  116 |       RCLCPP_INFO(this->get_logger(), "航点 %ld/%ld",
+      |                                       ^~~~~~~~~~~~~~
+  117 |                   current_wp_ + 1, waypoints_.size());
+      |                   ~~~~~~~~~~~~~~~      
+      |                               |
+      |                               int
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:116:47: note: format string is defined here
+  116 |       RCLCPP_INFO(this->get_logger(), "航点 %ld/%ld",
+      |                                             ~~^
+      |                                               |
+      |                                               long int
+      |                                             %d
+[100%] Linking CXX executable demo_node
+[100%] Built target demo_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node
+-- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node" to ""
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo/demo_node.hpp
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch/demo.launch.py
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/package_run_dependencies/excavator_demo
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/parent_prefix_path/excavator_demo
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.bash
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.zsh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.dsv
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/packages/excavator_demo
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig-version.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.xml

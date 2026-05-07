@@ -1,0 +1,42 @@
+[0.013s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_ros2_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge
+[0.310s] -- The C compiler identification is GNU 11.4.0
+[0.902s] -- The CXX compiler identification is GNU 12.3.0
+[1.355s] -- Detecting C compiler ABI info
+[1.504s] -- Detecting C compiler ABI info - done
+[1.511s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.512s] -- Detecting C compile features
+[1.512s] -- Detecting C compile features - done
+[1.516s] -- Detecting CXX compiler ABI info
+[1.657s] -- Detecting CXX compiler ABI info - done
+[1.665s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.665s] -- Detecting CXX compile features
+[1.665s] -- Detecting CXX compile features - done
+[1.692s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.839s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.951s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[2.188s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.196s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.212s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.233s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.323s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.330s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.189s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.104s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.882s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.899s] -- Looking for pthread.h
+[6.077s] -- Looking for pthread.h - found
+[6.077s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.226s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.226s] -- Found Threads: TRUE  
+[6.297s] -- Found hardware_interface: 2.53.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[8.822s] -- Found controller_interface: 2.53.1 (/opt/ros/humble/share/controller_interface/cmake)
+[8.829s] -- Found controller_manager: 2.53.1 (/opt/ros/humble/share/controller_manager/cmake)
+[8.884s] CMake Error at CMakeLists.txt:27 (message):
+[8.884s]   MuJoCo头文件未找到:
+[8.884s]   /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/../../excavator_simulator_mujoco/build/_deps/mujoco-src/include/mujoco/mujoco.h
+[8.885s] 
+[8.885s] 
+[8.885s] -- Configuring incomplete, errors occurred!
+[8.885s] See also "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_ros2_bridge/CMakeFiles/CMakeOutput.log".
+[8.897s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_ros2_bridge' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge

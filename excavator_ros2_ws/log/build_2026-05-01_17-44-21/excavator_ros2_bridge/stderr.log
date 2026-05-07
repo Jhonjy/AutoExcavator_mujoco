@@ -1,0 +1,80 @@
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp: In member function ‘virtual excavator_ros2_bridge::CallbackReturn excavator_ros2_bridge::ExcavatorHardwareInterface::on_init(const hardware_interface::HardwareInfo&)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:58:28: error: ‘get_logger’ is not a member of ‘rclcpp’
+   58 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                            ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:58:7: error: ‘RCLCPP_FATAL’ was not declared in this scope; did you mean ‘RCLCPP_LOCAL’?
+   58 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |       ^~~~~~~~~~~~
+      |       RCLCPP_LOCAL
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:65:23: error: ‘get_logger’ is not a member of ‘rclcpp’
+   65 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                       ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:65:3: error: ‘RCLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_IMPORT’?
+   65 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |   ^~~~~~~~~~~
+      |   RCLCPP_IMPORT
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp: In member function ‘virtual excavator_ros2_bridge::CallbackReturn excavator_ros2_bridge::ExcavatorHardwareInterface::on_configure(const rclcpp_lifecycle::State&)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:83:26: error: ‘get_logger’ is not a member of ‘rclcpp’
+   83 |     RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                          ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:83:5: error: ‘RCLCPP_FATAL’ was not declared in this scope; did you mean ‘RCLCPP_LOCAL’?
+   83 |     RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |     ^~~~~~~~~~~~
+      |     RCLCPP_LOCAL
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:91:26: error: ‘get_logger’ is not a member of ‘rclcpp’
+   91 |     RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                          ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:91:5: error: ‘RCLCPP_FATAL’ was not declared in this scope; did you mean ‘RCLCPP_LOCAL’?
+   91 |     RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |     ^~~~~~~~~~~~
+      |     RCLCPP_LOCAL
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:114:28: error: ‘get_logger’ is not a member of ‘rclcpp’
+  114 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                            ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:114:7: error: ‘RCLCPP_FATAL’ was not declared in this scope; did you mean ‘RCLCPP_LOCAL’?
+  114 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |       ^~~~~~~~~~~~
+      |       RCLCPP_LOCAL
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:119:28: error: ‘get_logger’ is not a member of ‘rclcpp’
+  119 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                            ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:119:7: error: ‘RCLCPP_FATAL’ was not declared in this scope; did you mean ‘RCLCPP_LOCAL’?
+  119 |       RCLCPP_FATAL(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |       ^~~~~~~~~~~~
+      |       RCLCPP_LOCAL
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:124:25: error: ‘get_logger’ is not a member of ‘rclcpp’
+  124 |     RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                         ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:124:5: error: ‘RCLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_IMPORT’?
+  124 |     RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |     ^~~~~~~~~~~
+      |     RCLCPP_IMPORT
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:129:23: error: ‘get_logger’ is not a member of ‘rclcpp’
+  129 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                       ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:129:3: error: ‘RCLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_IMPORT’?
+  129 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |   ^~~~~~~~~~~
+      |   RCLCPP_IMPORT
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp: In member function ‘virtual excavator_ros2_bridge::CallbackReturn excavator_ros2_bridge::ExcavatorHardwareInterface::on_activate(const rclcpp_lifecycle::State&)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:148:23: error: ‘get_logger’ is not a member of ‘rclcpp’
+  148 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                       ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:148:3: error: ‘RCLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_IMPORT’?
+  148 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |   ^~~~~~~~~~~
+      |   RCLCPP_IMPORT
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:151:25: error: ‘get_logger’ is not a member of ‘rclcpp’
+  151 |     RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"),
+      |                         ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp: In member function ‘virtual excavator_ros2_bridge::CallbackReturn excavator_ros2_bridge::ExcavatorHardwareInterface::on_deactivate(const rclcpp_lifecycle::State&)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:169:23: error: ‘get_logger’ is not a member of ‘rclcpp’
+  169 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"), "硬件已停用");
+      |                       ^~~~~~~~~~
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/excavator_hardware_interface.cpp:169:3: error: ‘RCLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_IMPORT’?
+  169 |   RCLCPP_INFO(rclcpp::get_logger("ExcavatorHardwareInterface"), "硬件已停用");
+      |   ^~~~~~~~~~~
+      |   RCLCPP_IMPORT
+gmake[2]: *** [CMakeFiles/excavator_hardware.dir/build.make:90: CMakeFiles/excavator_hardware.dir/src/excavator_hardware_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/excavator_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

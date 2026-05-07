@@ -1,0 +1,8 @@
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/src/mujoco_viewer.cpp: In function ‘int main(int, char**)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/src/mujoco_viewer.cpp:274:13: error: ‘mjVIS_WIREFRAME’ was not declared in this scope; did you mean ‘mjRND_WIREFRAME’?
+  274 |   opt.flags[mjVIS_WIREFRAME] = 1;
+      |             ^~~~~~~~~~~~~~~
+      |             mjRND_WIREFRAME
+gmake[2]: *** [CMakeFiles/mujoco_viewer.dir/build.make:76: CMakeFiles/mujoco_viewer.dir/src/mujoco_viewer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mujoco_viewer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,67 @@
+[0.018s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo
+[0.492s] -- The C compiler identification is GNU 11.4.0
+[1.577s] -- The CXX compiler identification is GNU 12.3.0
+[2.283s] -- Detecting C compiler ABI info
+[2.582s] -- Detecting C compiler ABI info - done
+[2.587s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.588s] -- Detecting C compile features
+[2.589s] -- Detecting C compile features - done
+[2.593s] -- Detecting CXX compiler ABI info
+[2.853s] -- Detecting CXX compiler ABI info - done
+[2.861s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.861s] -- Detecting CXX compile features
+[2.862s] -- Detecting CXX compile features - done
+[2.880s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.043s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.171s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[3.574s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.583s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.597s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.614s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.639s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.712s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.716s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.569s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.705s] -- Found FastRTPS: /opt/ros/humble/include  
+[15.346s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.363s] -- Looking for pthread.h
+[15.620s] -- Looking for pthread.h - found
+[15.621s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[15.877s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[15.878s] -- Found Threads: TRUE  
+[15.953s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[15.966s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[16.056s] -- Configuring done
+[16.072s] -- Generating done
+[16.080s] -- Build files have been written to: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo
+[16.090s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo
+[16.092s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo -- -j12 -l12
+[16.135s] [ 50%] Building CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o
+[25.990s] [100%] Linking CXX executable demo_node
+[26.543s] [100%] Built target demo_node
+[26.553s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo -- -j12 -l12
+[26.563s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo
+[26.569s] -- Install configuration: ""
+[26.569s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node
+[26.572s] -- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node" to ""
+[26.573s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include
+[26.573s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo
+[26.573s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo/demo_node.hpp
+[26.573s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch
+[26.573s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch/demo.launch.py
+[26.574s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/package_run_dependencies/excavator_demo
+[26.575s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/parent_prefix_path/excavator_demo
+[26.576s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.sh
+[26.576s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.dsv
+[26.576s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.sh
+[26.577s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.dsv
+[26.577s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.bash
+[26.578s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.sh
+[26.578s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.zsh
+[26.578s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.dsv
+[26.579s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.dsv
+[26.579s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/packages/excavator_demo
+[26.579s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig.cmake
+[26.580s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig-version.cmake
+[26.580s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.xml
+[26.582s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo

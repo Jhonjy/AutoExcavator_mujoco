@@ -1,0 +1,1 @@
+/usr/bin/clang++ -O3 -DNDEBUG -fuse-ld=gold -Wl,--gc-sections CMakeFiles/record.dir/record.cc.o -o ../../../bin/record  -Wl,-rpath,"\$ORIGIN/../lib" ../../../lib/libmujoco.so.2.3.8 ../../../lib/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so 

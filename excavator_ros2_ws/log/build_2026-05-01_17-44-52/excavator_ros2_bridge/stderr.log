@@ -1,0 +1,7 @@
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/bridge_node_main.cpp: In lambda function:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/src/bridge_node_main.cpp:46:30: error: ‘using element_type = class controller_manager::ControllerManager’ {aka ‘class controller_manager::ControllerManager’} has no member named ‘spin’
+   46 |     controller_manager_node->spin();
+      |                              ^~~~
+gmake[2]: *** [CMakeFiles/bridge_node.dir/build.make:76: CMakeFiles/bridge_node.dir/src/bridge_node_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/bridge_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,1 @@
+/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/excavator_simulator.dir/main.cc.o -o excavator_simulator  -Wl,-rpath,/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/lib ../lib/libsimulate.a ../lib/libglfw3.a ../lib/liblodepng.a ../lib/libmujoco.so.2.3.8 /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so 

@@ -1,0 +1,10 @@
+<library path="excavator_hardware">
+  <class name="excavator_ros2_bridge/ExcavatorHardwareInterface"
+         type="excavator_ros2_bridge::ExcavatorHardwareInterface"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      MuJoCo挖掘机仿真器的ROS2 Control硬件接口。
+      将MuJoCo的4个velocity执行器(Rotation/Boom/Arm/Bucket)映射为ros2_control关节。
+    </description>
+  </class>
+</library>

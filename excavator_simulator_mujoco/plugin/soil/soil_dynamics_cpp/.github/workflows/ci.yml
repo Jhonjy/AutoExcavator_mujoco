@@ -1,0 +1,202 @@
+name: CI
+
+# Trigger CI for pull requests to the main branch or when a release is made
+# Do not trigger CI for draft pull request
+on:
+  push:
+    branches: ["main"]
+    tags: ["v*"]
+  pull_request:  
+    types: [opened, synchronize, reopened, ready_for_review]
+
+
+jobs:
+  build:
+    name: Build || C++ - ${{ matrix.os }} - ${{ github.event_name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+
+    if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
+    steps:
+      # ---------------------------------------------------------------------- #
+      # ------------------------ Install dependencies ------------------------ #
+      # ---------------------------------------------------------------------- #
+      - name: Install cpplint
+        run: pip install cpplint
+
+      - name: Install Google test
+        run: |
+          sudo apt-get update
+          sudo apt-get install libgtest-dev
+          cd /usr/src/gtest
+          sudo cmake CMakeLists.txt
+          sudo make
+
+      - name: Install Valgrind
+        run: sudo apt-get install valgrind
+
+      - name: Install Google benchmark
+        run: sudo apt-get install libbenchmark-dev
+
+      # Google Logging has to be installed from source.
+      # This is because version 0.6 is needed but ubuntu 22.04
+      # used by Github action only supports version 0.5.
+      - name: Clone Google Logging repo
+        uses: actions/checkout@v3
+        with:
+          repository: google/glog
+          ref: 'v0.6.0'
+
+      - name: Install dependencies of Google Logging
+        run: sudo apt-get install libgflags-dev libunwind-dev
+
+      - name: Install Google Logging
+        run: |
+          cmake -S . -B build -G "Unix Makefiles"
+          cmake --build build
+          sudo cmake --build build --target install
+
+      # ---------------------------------------------------------------------- #
+      # ---------------------- Run linter on all files ----------------------- #
+      # ---------------------------------------------------------------------- #
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Run cpplint on the source files
+        run: cpplint soil_simulator/*
+
+      - name: Run cpplint on the unit test files
+        run: cpplint --filter=-'readability/fn_size' test/unit_tests/*
+
+      - name: Run cpplint on the example script
+        run: cpplint test/examnple/*
+
+      - name: Run cpplint on the benchmark files
+        run: cpplint --filter=-'runtime/references' test/benchmarks/*
+
+      # ---------------------------------------------------------------------- #
+      # ------------------------- Build all targets -------------------------- #
+      # ---------------------------------------------------------------------- #
+      - name: Build the environment
+        run: cmake -S . -B build
+
+      - name: Build the simulator executable
+        run: cmake --build build --target soil_dynamics
+
+      - name: Build the simulator library
+        run: cmake --build build --target soil_simulator
+
+      - name: Build the unit tests
+        run: cmake --build build --target unit_tests
+
+      - name: Build the example script
+        run: cmake --build build --target soil_evolution
+
+      - name: Build the benchmark functions
+        run: cmake --build build --target benchmarks
+
+      # ---------------------------------------------------------------------- #
+      # -------------------- Run Valgrind on all targets --------------------- #
+      # ---------------------------------------------------------------------- #
+      - name: Run valgrind on the simulator
+        run: valgrind --leak-check=yes --error-exitcode=1 ./build/soil_simulator/soil_dynamics
+        shell: bash
+
+      - name: Run valgrind on the unit tests
+        run: valgrind --leak-check=yes --error-exitcode=1 ./build/test/unit_tests/unit_tests
+        shell: bash
+
+      - name: Run valgrind on the example script
+        run: valgrind --leak-check=yes --error-exitcode=1 ./build/test/example/soil_evolution
+        shell: bash
+
+      - name: Run valgrind on the benchmark functions
+        run: valgrind --leak-check=yes --error-exitcode=1 ./build/test/benchmarks/benchmarks
+        shell: bash
+  tests:
+    name: Unit tests || C++ - ${{ matrix.os }} - ${{ github.event_name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+    if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
+    steps:
+      - name: Install Google test
+        run: |
+          sudo apt-get install libgtest-dev
+          cd /usr/src/gtest
+          sudo cmake CMakeLists.txt
+          sudo make
+
+      - name: Install Google benchmark
+        run: sudo apt-get install libbenchmark-dev
+
+      # Google Logging has to be installed from source.
+      # This is because version 0.6 is needed but ubuntu 22.04
+      # used by Github action only supports version 0.5.
+      - name: Clone Google Logging repo
+        uses: actions/checkout@v3
+        with:
+          repository: google/glog
+          ref: 'v0.6.0'
+
+      - name: Install dependencies of Google Logging
+        run: sudo apt-get install libgflags-dev libunwind-dev
+
+      - name: Install Google Logging
+        run: |
+          cmake -S . -B build -G "Unix Makefiles"
+          cmake --build build
+          sudo cmake --build build --target install
+
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Build the unit test
+        run: |
+          cmake -S . -B build
+          cmake --build build --target unit_tests
+
+      - name: Run the unit test
+        run: ./build/test/unit_tests/unit_tests
+  doc:
+    name: Doc deployment || C++ - ${{ matrix.os }} - ${{ github.event_name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+    if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Get all git tags
+        run: git fetch --prune --unshallow --tags
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
+
+      - name: Install the documentation dependencies
+        run: python -m pip install sphinx sphinx-multiversion sphinx_rtd_theme breathe
+
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen
+
+      - name: Build the documentation
+        run: sphinx-multiversion docs docs/build/html
+
+      - name: Created index redirection
+        run: cp docs/_asset/index.html docs/build/html
+
+      - name: Deploy the documentation
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./docs/build/html

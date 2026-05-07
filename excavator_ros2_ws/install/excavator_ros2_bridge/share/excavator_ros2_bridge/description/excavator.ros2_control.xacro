@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+  ros2_control硬件接口宏定义
+  定义ExcavatorSystem硬件接口，将MuJoCo的4个velocity执行器暴露为ros2_control关节
+  model_path和plugin_dir参数在launch文件中通过参数替换
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- model_path和plugin_dir可通过xacro参数覆盖 -->
+  <xacro:arg name="model_path" default="/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/config/excavator_control.xml"/>
+  <xacro:arg name="plugin_dir" default="/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/bin/mujoco_plugin"/>
+
+  <xacro:macro name="excavator_ros2_control" params="">
+    <ros2_control name="ExcavatorSystem" type="system">
+
+      <!-- 硬件接口插件配置 -->
+      <hardware>
+        <plugin>excavator_ros2_bridge/ExcavatorHardwareInterface</plugin>
+        <!-- MuJoCo模型XML路径：必须指向原始项目目录（mesh/texture相对于XML路径） -->
+        <param name="model_path">$(arg model_path)</param>
+        <!-- 土壤插件目录 -->
+        <param name="plugin_dir">$(arg plugin_dir)</param>
+        <!-- 是否使用Simulate查看器模式（从viewer读取关节状态） -->
+        <param name="use_sim_viewer">false</param>
+      </hardware>
+
+      <!-- 关节1: 回转 (对应MuJoCo chassis关节) -->
+      <joint name="rotation_joint">
+        <command_interface name="velocity">
+          <param name="min">-0.5</param>
+          <param name="max">0.5</param>
+        </command_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+      </joint>
+
+      <!-- 关节2: 动臂 (对应MuJoCo chassis piston rod) -->
+      <joint name="boom_joint">
+        <command_interface name="velocity">
+          <param name="min">-0.5</param>
+          <param name="max">0.5</param>
+        </command_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+      </joint>
+
+      <!-- 关节3: 斗杆 (对应MuJoCo boom piston rod) -->
+      <joint name="arm_joint">
+        <command_interface name="velocity">
+          <param name="min">-0.5</param>
+          <param name="max">0.5</param>
+        </command_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+      </joint>
+
+      <!-- 关节4: 铲斗 (对应MuJoCo arm piston rod) -->
+      <joint name="bucket_joint">
+        <command_interface name="velocity">
+          <param name="min">-0.5</param>
+          <param name="max">0.5</param>
+        </command_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="position"/>
+      </joint>
+
+    </ros2_control>
+  </xacro:macro>
+
+</robot>

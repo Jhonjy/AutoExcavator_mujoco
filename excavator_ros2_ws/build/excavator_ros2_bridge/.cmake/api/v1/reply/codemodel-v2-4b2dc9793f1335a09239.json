@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-52520ce49d09dba7b8ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "excavator_ros2_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bridge_node-Release-42d526915b3621e6dccf.json",
+					"name" : "bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "excavator_hardware::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-excavator_hardware-Release-878052ebc8709f82883b.json",
+					"name" : "excavator_hardware",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "excavator_ros2_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-excavator_ros2_bridge_uninstall-Release-5124a70eb8e185549164.json",
+					"name" : "excavator_ros2_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-f477e414098ab364769f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_ros2_bridge",
+		"source" : "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

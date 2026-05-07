@@ -1,0 +1,35 @@
+Performing C SOURCE FILE Test SUPPORTS_LLD failed with the following output:
+Change Dir: /home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c89ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c89ce.dir/build.make CMakeFiles/cmTC_c89ce.dir/build
+gmake[1]: Entering directory '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c89ce.dir/src.c.o
+/usr/bin/clang -DSUPPORTS_LLD  -fuse-ld=lld -fPIE -std=c11 -MD -MT CMakeFiles/cmTC_c89ce.dir/src.c.o -MF CMakeFiles/cmTC_c89ce.dir/src.c.o.d -o CMakeFiles/cmTC_c89ce.dir/src.c.o -c /home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-command-line-argument]
+Linking C executable cmTC_c89ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c89ce.dir/link.txt --verbose=1
+/usr/bin/clang  -fuse-ld=lld CMakeFiles/cmTC_c89ce.dir/src.c.o -o cmTC_c89ce 
+clang: error: invalid linker name in argument '-fuse-ld=lld'
+gmake[1]: *** [CMakeFiles/cmTC_c89ce.dir/build.make:100: cmTC_c89ce] Error 1
+gmake[1]: Leaving directory '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c89ce/fast] Error 2
+
+
+Source file was:
+int main() {}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7ff44/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ff44.dir/build.make CMakeFiles/cmTC_7ff44.dir/build
+gmake[1]: Entering directory '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7ff44.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -fPIE   -wd654 -std=c++11 -MD -MT CMakeFiles/cmTC_7ff44.dir/src.cxx.o -MF CMakeFiles/cmTC_7ff44.dir/src.cxx.o.d -o CMakeFiles/cmTC_7ff44.dir/src.cxx.o -c /home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd654'
+clang: error: unknown argument: '-wd654'
+gmake[1]: *** [CMakeFiles/cmTC_7ff44.dir/build.make:79: CMakeFiles/cmTC_7ff44.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7ff44/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

@@ -1,0 +1,58 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found hardware_interface: 2.53.1 (/opt/ros/humble/share/hardware_interface/cmake)
+-- Found controller_interface: 2.53.1 (/opt/ros/humble/share/controller_interface/cmake)
+-- Found controller_manager: 2.53.1 (/opt/ros/humble/share/controller_manager/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_ros2_bridge
+Consolidate compiler generated dependencies of target excavator_hardware
+[ 20%] Building CXX object CMakeFiles/excavator_hardware.dir/src/mujoco_wrapper.cpp.o
+[ 40%] Building CXX object CMakeFiles/excavator_hardware.dir/src/excavator_hardware_interface.cpp.o
+[ 60%] Linking CXX shared library libexcavator_hardware.so
+[ 60%] Built target excavator_hardware
+Consolidate compiler generated dependencies of target bridge_node
+[ 80%] Linking CXX executable bridge_node
+[100%] Built target bridge_node
+-- Install configuration: "Release"
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/lib/libexcavator_hardware.so
+-- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/lib/libexcavator_hardware.so" to "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/../../../excavator_simulator_mujoco/build/lib"
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/lib/excavator_ros2_bridge/bridge_node
+-- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/lib/excavator_ros2_bridge/bridge_node" to ""
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/include
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/include/excavator_ros2_bridge
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/include/excavator_ros2_bridge/mujoco_wrapper.hpp
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/include/excavator_ros2_bridge/excavator_hardware_interface.hpp
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/launch
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/launch/excavator_bringup.launch.py
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/config
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/config/controllers.yaml
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/config/excavator_control.xml
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/description
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/description/excavator.ros2_control.xacro
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/description/excavator.urdf.xacro
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/excavator_hardware.xml
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/ament_index/resource_index/package_run_dependencies/excavator_ros2_bridge
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/ament_index/resource_index/parent_prefix_path/excavator_ros2_bridge
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/environment/path.sh
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/environment/path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/local_setup.bash
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/local_setup.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/local_setup.zsh
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/local_setup.dsv
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/package.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/ament_index/resource_index/packages/excavator_ros2_bridge
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/excavator_ros2_bridge
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/cmake/excavator_ros2_bridgeConfig.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/cmake/excavator_ros2_bridgeConfig-version.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/share/excavator_ros2_bridge/package.xml

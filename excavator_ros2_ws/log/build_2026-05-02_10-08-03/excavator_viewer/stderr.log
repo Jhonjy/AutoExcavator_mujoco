@@ -1,0 +1,8 @@
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/src/mujoco_viewer.cpp: In function ‘bool load_model(const std::string&)’:
+/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/src/mujoco_viewer.cpp:195:28: error: ‘mjModel’ {aka ‘struct mjModel_’} has no member named ‘jnt_ref’; did you mean ‘ntree’?
+  195 |       mj_joint_ref[i] = m->jnt_ref[mj_joint_ids[i]];
+      |                            ^~~~~~~
+      |                            ntree
+gmake[2]: *** [CMakeFiles/mujoco_viewer.dir/build.make:76: CMakeFiles/mujoco_viewer.dir/src/mujoco_viewer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mujoco_viewer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

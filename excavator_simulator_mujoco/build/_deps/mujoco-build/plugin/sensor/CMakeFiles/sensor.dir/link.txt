@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC -O3 -DNDEBUG -fuse-ld=gold -Wl,--gc-sections -shared -Wl,-soname,libsensor.so -o ../../../../lib/libsensor.so CMakeFiles/sensor.dir/sensor.cc.o CMakeFiles/sensor.dir/touch_grid.cc.o  -Wl,-rpath,/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco/build/lib ../../../../lib/libmujoco.so.2.3.8 

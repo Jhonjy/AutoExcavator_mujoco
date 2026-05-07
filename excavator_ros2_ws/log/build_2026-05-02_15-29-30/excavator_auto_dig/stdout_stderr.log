@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target auto_dig_node[0m
+[100%] Built target auto_dig_node
+-- Install configuration: "Release"
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/lib/excavator_auto_dig/auto_dig_node
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include/excavator_auto_dig
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include/excavator_auto_dig/auto_dig_node.hpp
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/launch
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/launch/auto_dig.launch.py
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/package_run_dependencies/excavator_auto_dig
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/parent_prefix_path/excavator_auto_dig
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/path.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/path.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.bash
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.sh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.zsh
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.dsv
+-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/package.dsv
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/packages/excavator_auto_dig
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/cmake/excavator_auto_digConfig.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/cmake/excavator_auto_digConfig-version.cmake
+-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/package.xml

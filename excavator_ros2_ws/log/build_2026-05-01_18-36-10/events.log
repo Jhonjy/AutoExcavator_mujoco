@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000258] (-) JobUnselected: {'identifier': 'excavator_ros2_bridge'}
+[0.000287] (-) JobUnselected: {'identifier': 'excavator_viewer'}
+[0.000312] (excavator_auto_dig) JobQueued: {'identifier': 'excavator_auto_dig', 'dependencies': OrderedDict()}
+[0.000738] (excavator_auto_dig) JobStarted: {'identifier': 'excavator_auto_dig'}
+[0.009171] (excavator_auto_dig) JobProgress: {'identifier': 'excavator_auto_dig', 'progress': 'cmake'}
+[0.009789] (excavator_auto_dig) JobProgress: {'identifier': 'excavator_auto_dig', 'progress': 'build'}
+[0.010585] (excavator_auto_dig) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'mimo-v2.5-pro'), ('AI_AGENT', 'claude-code/2.1.126/agent'), ('USER', 'ubuntu2204'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu2204/wslearning/install/learning_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('WT_PROFILE_ID', '{105cc6ab-b545-59f5-a471-953d1ec1a893}'), ('HOME', '/home/ubuntu2204'), ('OLDPWD', '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco'), ('NVM_BIN', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin'), ('NVM_INC', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'mimo-v2.5-pro'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('NVM_DIR', '/home/ubuntu2204/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu2204/wslearning/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu2204'), ('NAME', 'DESKTOP-BH77GIT'), ('WSL_INTEROP', '/run/WSL/127978_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ANTHROPIC_BASE_URL', 'https://token-plan-cn.xiaomimimo.com/anthropic'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'mimo-v2.5-pro'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/ubuntu2204/.local/bin:/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/f/VMWare/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/d/anaconda3:/mnt/d/anaconda3/Library/bin:/mnt/d/anaconda3/Library/mingw-w64/bin:/mnt/d/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/King/.cherrystudio/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nodejs/node_cache:/mnt/c/Program Files/CMake/bin:/mnt/f/MATLAB/R2015b/runtime/win32:/mnt/f/MATLAB/R2015b/bin:/mnt/f/MATLAB/R2015b/polyspace/bin:/mnt/d/CANdb++/Exec32:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/f/MatlabR2025b/runtime/win64:/mnt/f/MatlabR2025b/bin:/mnt/c/Program Files/Git LFS:/mnt/f/MatlabR2025b/bin/win64:/mnt/f/MatlabR2025b/extern/bin/win64:/mnt/f/Adams/bin:/mnt/c/Users/King/.mcuxpressotools/ninja-1.12.1:/mnt/c/Program Files/7-Zip:/mnt/c/Users/King/.mcuxpressotools/dtc-1.6.1/tools/usr/bin:/mnt/c/Users/King/.mcuxpressotools/gperf-3.0.1/bin:/mnt/c/Users/King/.mcuxpressotools/wget-1.21.4:/mnt/c/Users/King/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Users/King/AppData/Local/Programs/Ollama:/mnt/c/Users/King/.local/bin:/snap/bin:/home/ubuntu2204/.claude/plugins/cache/karpathy-skills/andrej-karpathy-skills/1.0.0/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('WT_SESSION', '96aa5fe0-07f2-44ca-8e61-888506d638b2'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'mimo-v2.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'tp-ciz43ytu0ckh4vfugdk03gq6fvllnayl5aftwmt7flh9nos6'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('ANTHROPIC_REASONING_MODEL', 'mimo-v2.5-pro'), ('PWD', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig'), ('TURTLEBOT3_MODEL', 'burger'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/ubuntu2204/wslearning/install/learning_urdf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_topic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_tf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_service/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_qos/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_pkg_python/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_parameter/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_node/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_launch/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_action/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_interface/local/lib/python3.10/dist-packages:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_gazebo/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.060205] (excavator_auto_dig) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/auto_dig_node.dir/src/auto_dig_node.cpp.o\n'}
+[0.099765] (-) TimerEvent: {}
+[0.200029] (-) TimerEvent: {}
+[0.300241] (-) TimerEvent: {}
+[0.400456] (-) TimerEvent: {}
+[0.500765] (-) TimerEvent: {}
+[0.601026] (-) TimerEvent: {}
+[0.701240] (-) TimerEvent: {}
+[0.801461] (-) TimerEvent: {}
+[0.901695] (-) TimerEvent: {}
+[1.001876] (-) TimerEvent: {}
+[1.102140] (-) TimerEvent: {}
+[1.202414] (-) TimerEvent: {}
+[1.302621] (-) TimerEvent: {}
+[1.402826] (-) TimerEvent: {}
+[1.503051] (-) TimerEvent: {}
+[1.603241] (-) TimerEvent: {}
+[1.703426] (-) TimerEvent: {}
+[1.803663] (-) TimerEvent: {}
+[1.903907] (-) TimerEvent: {}
+[2.004165] (-) TimerEvent: {}
+[2.104370] (-) TimerEvent: {}
+[2.204636] (-) TimerEvent: {}
+[2.304858] (-) TimerEvent: {}
+[2.405116] (-) TimerEvent: {}
+[2.505351] (-) TimerEvent: {}
+[2.605586] (-) TimerEvent: {}
+[2.705835] (-) TimerEvent: {}
+[2.806057] (-) TimerEvent: {}
+[2.906230] (-) TimerEvent: {}
+[3.006461] (-) TimerEvent: {}
+[3.106724] (-) TimerEvent: {}
+[3.206914] (-) TimerEvent: {}
+[3.307108] (-) TimerEvent: {}
+[3.407324] (-) TimerEvent: {}
+[3.507507] (-) TimerEvent: {}
+[3.607690] (-) TimerEvent: {}
+[3.707871] (-) TimerEvent: {}
+[3.808074] (-) TimerEvent: {}
+[3.908281] (-) TimerEvent: {}
+[4.008498] (-) TimerEvent: {}
+[4.108683] (-) TimerEvent: {}
+[4.208907] (-) TimerEvent: {}
+[4.309153] (-) TimerEvent: {}
+[4.409334] (-) TimerEvent: {}
+[4.509511] (-) TimerEvent: {}
+[4.609701] (-) TimerEvent: {}
+[4.709877] (-) TimerEvent: {}
+[4.810137] (-) TimerEvent: {}
+[4.910485] (-) TimerEvent: {}
+[5.010711] (-) TimerEvent: {}
+[5.110989] (-) TimerEvent: {}
+[5.211267] (-) TimerEvent: {}
+[5.311491] (-) TimerEvent: {}
+[5.411731] (-) TimerEvent: {}
+[5.511970] (-) TimerEvent: {}
+[5.612259] (-) TimerEvent: {}
+[5.712548] (-) TimerEvent: {}
+[5.812876] (-) TimerEvent: {}
+[5.913133] (-) TimerEvent: {}
+[6.013349] (-) TimerEvent: {}
+[6.113605] (-) TimerEvent: {}
+[6.213849] (-) TimerEvent: {}
+[6.314125] (-) TimerEvent: {}
+[6.414385] (-) TimerEvent: {}
+[6.514604] (-) TimerEvent: {}
+[6.614811] (-) TimerEvent: {}
+[6.715051] (-) TimerEvent: {}
+[6.815271] (-) TimerEvent: {}
+[6.915480] (-) TimerEvent: {}
+[7.015670] (-) TimerEvent: {}
+[7.115961] (-) TimerEvent: {}
+[7.216345] (-) TimerEvent: {}
+[7.316605] (-) TimerEvent: {}
+[7.416862] (-) TimerEvent: {}
+[7.517134] (-) TimerEvent: {}
+[7.617435] (-) TimerEvent: {}
+[7.717668] (-) TimerEvent: {}
+[7.817900] (-) TimerEvent: {}
+[7.918160] (-) TimerEvent: {}
+[8.018356] (-) TimerEvent: {}
+[8.118571] (-) TimerEvent: {}
+[8.218790] (-) TimerEvent: {}
+[8.319014] (-) TimerEvent: {}
+[8.419195] (-) TimerEvent: {}
+[8.519379] (-) TimerEvent: {}
+[8.619561] (-) TimerEvent: {}
+[8.719762] (-) TimerEvent: {}
+[8.819978] (-) TimerEvent: {}
+[8.920214] (-) TimerEvent: {}
+[9.020460] (-) TimerEvent: {}
+[9.120643] (-) TimerEvent: {}
+[9.220836] (-) TimerEvent: {}
+[9.321060] (-) TimerEvent: {}
+[9.421266] (-) TimerEvent: {}
+[9.521448] (-) TimerEvent: {}
+[9.621696] (-) TimerEvent: {}
+[9.721965] (-) TimerEvent: {}
+[9.822237] (-) TimerEvent: {}
+[9.922628] (-) TimerEvent: {}
+[10.022960] (-) TimerEvent: {}
+[10.123293] (-) TimerEvent: {}
+[10.223505] (-) TimerEvent: {}
+[10.323685] (-) TimerEvent: {}
+[10.423861] (-) TimerEvent: {}
+[10.524033] (-) TimerEvent: {}
+[10.624220] (-) TimerEvent: {}
+[10.724411] (-) TimerEvent: {}
+[10.824591] (-) TimerEvent: {}
+[10.924841] (-) TimerEvent: {}
+[11.025134] (-) TimerEvent: {}
+[11.125326] (-) TimerEvent: {}
+[11.225520] (-) TimerEvent: {}
+[11.325691] (-) TimerEvent: {}
+[11.425859] (-) TimerEvent: {}
+[11.526087] (-) TimerEvent: {}
+[11.626301] (-) TimerEvent: {}
+[11.726543] (-) TimerEvent: {}
+[11.826832] (-) TimerEvent: {}
+[11.927298] (-) TimerEvent: {}
+[12.027562] (-) TimerEvent: {}
+[12.127854] (-) TimerEvent: {}
+[12.144188] (excavator_auto_dig) StdoutLine: {'line': b'[100%] Linking CXX executable auto_dig_node\n'}
+[12.227999] (-) TimerEvent: {}
+[12.328218] (-) TimerEvent: {}
+[12.428448] (-) TimerEvent: {}
+[12.475000] (excavator_auto_dig) StdoutLine: {'line': b'[100%] Built target auto_dig_node\n'}
+[12.485572] (excavator_auto_dig) CommandEnded: {'returncode': 0}
+[12.486281] (excavator_auto_dig) JobProgress: {'identifier': 'excavator_auto_dig', 'progress': 'install'}
+[12.494231] (excavator_auto_dig) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig'], 'cwd': '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'mimo-v2.5-pro'), ('AI_AGENT', 'claude-code/2.1.126/agent'), ('USER', 'ubuntu2204'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu2204/wslearning/install/learning_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('WT_PROFILE_ID', '{105cc6ab-b545-59f5-a471-953d1ec1a893}'), ('HOME', '/home/ubuntu2204'), ('OLDPWD', '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco'), ('NVM_BIN', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin'), ('NVM_INC', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'mimo-v2.5-pro'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('NVM_DIR', '/home/ubuntu2204/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu2204/wslearning/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu2204'), ('NAME', 'DESKTOP-BH77GIT'), ('WSL_INTEROP', '/run/WSL/127978_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ANTHROPIC_BASE_URL', 'https://token-plan-cn.xiaomimimo.com/anthropic'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'mimo-v2.5-pro'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/ubuntu2204/.local/bin:/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/f/VMWare/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/d/anaconda3:/mnt/d/anaconda3/Library/bin:/mnt/d/anaconda3/Library/mingw-w64/bin:/mnt/d/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/King/.cherrystudio/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nodejs/node_cache:/mnt/c/Program Files/CMake/bin:/mnt/f/MATLAB/R2015b/runtime/win32:/mnt/f/MATLAB/R2015b/bin:/mnt/f/MATLAB/R2015b/polyspace/bin:/mnt/d/CANdb++/Exec32:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/f/MatlabR2025b/runtime/win64:/mnt/f/MatlabR2025b/bin:/mnt/c/Program Files/Git LFS:/mnt/f/MatlabR2025b/bin/win64:/mnt/f/MatlabR2025b/extern/bin/win64:/mnt/f/Adams/bin:/mnt/c/Users/King/.mcuxpressotools/ninja-1.12.1:/mnt/c/Program Files/7-Zip:/mnt/c/Users/King/.mcuxpressotools/dtc-1.6.1/tools/usr/bin:/mnt/c/Users/King/.mcuxpressotools/gperf-3.0.1/bin:/mnt/c/Users/King/.mcuxpressotools/wget-1.21.4:/mnt/c/Users/King/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Users/King/AppData/Local/Programs/Ollama:/mnt/c/Users/King/.local/bin:/snap/bin:/home/ubuntu2204/.claude/plugins/cache/karpathy-skills/andrej-karpathy-skills/1.0.0/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('WT_SESSION', '96aa5fe0-07f2-44ca-8e61-888506d638b2'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'mimo-v2.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'tp-ciz43ytu0ckh4vfugdk03gq6fvllnayl5aftwmt7flh9nos6'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('ANTHROPIC_REASONING_MODEL', 'mimo-v2.5-pro'), ('PWD', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig'), ('TURTLEBOT3_MODEL', 'burger'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/ubuntu2204/wslearning/install/learning_urdf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_topic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_tf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_service/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_qos/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_pkg_python/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_parameter/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_node/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_launch/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_action/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_interface/local/lib/python3.10/dist-packages:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_gazebo/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[12.504049] (excavator_auto_dig) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[12.504457] (excavator_auto_dig) StdoutLine: {'line': b'-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/lib/excavator_auto_dig/auto_dig_node\n'}
+[12.505703] (excavator_auto_dig) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/lib/excavator_auto_dig/auto_dig_node" to ""\n'}
+[12.505916] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include\n'}
+[12.506175] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include/excavator_auto_dig\n'}
+[12.506576] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include/excavator_auto_dig/auto_dig_node.hpp\n'}
+[12.506675] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/launch\n'}
+[12.506764] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/launch/auto_dig.launch.py\n'}
+[12.506852] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/package_run_dependencies/excavator_auto_dig\n'}
+[12.507068] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/parent_prefix_path/excavator_auto_dig\n'}
+[12.507396] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/ament_prefix_path.sh\n'}
+[12.507458] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/ament_prefix_path.dsv\n'}
+[12.507487] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/path.sh\n'}
+[12.507529] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/environment/path.dsv\n'}
+[12.507556] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.bash\n'}
+[12.507579] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.sh\n'}
+[12.507603] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.zsh\n'}
+[12.507626] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/local_setup.dsv\n'}
+[12.507649] (excavator_auto_dig) StdoutLine: {'line': b'-- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/package.dsv\n'}
+[12.507673] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/ament_index/resource_index/packages/excavator_auto_dig\n'}
+[12.507696] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/cmake/excavator_auto_digConfig.cmake\n'}
+[12.507719] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/cmake/excavator_auto_digConfig-version.cmake\n'}
+[12.507743] (excavator_auto_dig) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/share/excavator_auto_dig/package.xml\n'}
+[12.508771] (excavator_auto_dig) CommandEnded: {'returncode': 0}
+[12.525599] (excavator_auto_dig) JobEnded: {'identifier': 'excavator_auto_dig', 'rc': 0}
+[12.525937] (-) EventReactorShutdown: {}

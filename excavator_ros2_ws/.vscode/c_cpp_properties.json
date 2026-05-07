@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_ros2_bridge/include/**",
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/**",
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig/include/**",
+        "/home/ubuntu2204/wslearning/install/learning_interface/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_auto_dig/include/**",
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/include/**",
+        "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_ros2_bridge/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

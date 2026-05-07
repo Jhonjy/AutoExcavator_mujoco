@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsoil_simulator.a CMakeFiles/soil_simulator.dir/main.cpp.o CMakeFiles/soil_simulator.dir/soil_dynamics.cpp.o CMakeFiles/soil_simulator.dir/types.cpp.o CMakeFiles/soil_simulator.dir/body_pos.cpp.o CMakeFiles/soil_simulator.dir/body_soil.cpp.o CMakeFiles/soil_simulator.dir/intersecting_cells.cpp.o CMakeFiles/soil_simulator.dir/relax.cpp.o CMakeFiles/soil_simulator.dir/utils.cpp.o
+/usr/bin/ranlib libsoil_simulator.a

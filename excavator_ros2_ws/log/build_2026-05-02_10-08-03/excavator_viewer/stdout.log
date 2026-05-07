@@ -1,0 +1,2 @@
+Consolidate compiler generated dependencies of target mujoco_viewer
+[ 50%] Building CXX object CMakeFiles/mujoco_viewer.dir/src/mujoco_viewer.cpp.o

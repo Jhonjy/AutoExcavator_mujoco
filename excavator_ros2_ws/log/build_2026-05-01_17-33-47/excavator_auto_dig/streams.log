@@ -1,0 +1,41 @@
+[0.021s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_auto_dig -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig
+[0.320s] -- The C compiler identification is GNU 11.4.0
+[0.913s] -- The CXX compiler identification is GNU 12.3.0
+[1.366s] -- Detecting C compiler ABI info
+[1.515s] -- Detecting C compiler ABI info - done
+[1.522s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.523s] -- Detecting C compile features
+[1.523s] -- Detecting C compile features - done
+[1.527s] -- Detecting CXX compiler ABI info
+[1.668s] -- Detecting CXX compiler ABI info - done
+[1.676s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.676s] -- Detecting CXX compile features
+[1.676s] -- Detecting CXX compile features - done
+[1.703s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.848s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.962s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[2.199s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.207s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.223s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.244s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.267s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.334s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.341s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.200s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.115s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.893s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.909s] -- Looking for pthread.h
+[6.090s] -- Looking for pthread.h - found
+[6.091s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.236s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.237s] -- Found Threads: TRUE  
+[6.308s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[6.322s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.409s] -- Configuring done
+[6.418s] -- Generating done
+[6.421s] -- Build files have been written to: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig
+[6.429s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_auto_dig -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_auto_dig
+[6.430s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_auto_dig -- -j12 -l12
+[6.467s] [ 50%] Building CXX object CMakeFiles/auto_dig_node.dir/src/auto_dig_node.cpp.o
+[16.562s] [100%] Linking CXX executable auto_dig_node
+[16.852s] [100%] Built target auto_dig_node

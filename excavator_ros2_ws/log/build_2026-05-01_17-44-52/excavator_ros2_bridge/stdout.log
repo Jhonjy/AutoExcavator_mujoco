@@ -1,0 +1,5 @@
+Consolidate compiler generated dependencies of target excavator_hardware
+[ 20%] Building CXX object CMakeFiles/excavator_hardware.dir/src/excavator_hardware_interface.cpp.o
+[ 40%] Linking CXX shared library libexcavator_hardware.so
+[ 60%] Built target excavator_hardware
+[ 80%] Building CXX object CMakeFiles/bridge_node.dir/src/bridge_node_main.cpp.o

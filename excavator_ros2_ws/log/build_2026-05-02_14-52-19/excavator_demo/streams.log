@@ -1,0 +1,58 @@
+[0.015s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo -- -j12 -l12
+[0.059s] Consolidate compiler generated dependencies of target demo_node
+[0.074s] [ 50%] Building CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o
+[2.348s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[2.349s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.349s]                  from /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/include/excavator_demo/demo_node.hpp:9,
+[2.349s]                  from /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:4:
+[2.349s] /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp: In member function ‘void excavator_demo::DemoNode::control_loop()’:
+[2.349s] /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:116:39: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 5 has type ‘int’ [-Wformat=]
+[2.349s]   116 |       RCLCPP_INFO(this->get_logger(), "航点 %ld/%ld",
+[2.349s]       |                                       ^~~~~~~~~~~~~~
+[2.349s]   117 |                   current_wp_ + 1, waypoints_.size());
+[2.349s]       |                   ~~~~~~~~~~~~~~~      
+[2.349s]       |                               |
+[2.349s]       |                               int
+[2.349s] /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_demo/src/demo_node.cpp:116:47: note: format string is defined here
+[2.349s]   116 |       RCLCPP_INFO(this->get_logger(), "航点 %ld/%ld",
+[2.349s]       |                                             ~~^
+[2.349s]       |                                               |
+[2.349s]       |                                               long int
+[2.349s]       |                                             %d
+[10.113s] [100%] Linking CXX executable demo_node
+[10.798s] [100%] Built target demo_node
+[10.830s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo -- -j12 -l12
+[10.840s] Invoking command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo
+[10.846s] -- Install configuration: ""
+[10.846s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node
+[10.849s] -- Set runtime path of "/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/lib/excavator_demo/demo_node" to ""
+[10.849s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include
+[10.854s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo
+[10.854s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/include/excavator_demo/demo_node.hpp
+[10.854s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/launch/demo.launch.py
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/package_run_dependencies/excavator_demo
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/parent_prefix_path/excavator_demo
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.sh
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/ament_prefix_path.dsv
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.sh
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/environment/path.dsv
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.bash
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.sh
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.zsh
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/local_setup.dsv
+[10.855s] -- Installing: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.dsv
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/ament_index/resource_index/packages/excavator_demo
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig.cmake
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/cmake/excavator_demoConfig-version.cmake
+[10.855s] -- Up-to-date: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_demo/share/excavator_demo/package.xml
+[10.856s] Invoked command in '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_demo

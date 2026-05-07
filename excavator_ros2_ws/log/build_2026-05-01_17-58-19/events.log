@@ -1,0 +1,610 @@
+[0.000000] (-) TimerEvent: {}
+[0.000046] (-) JobUnselected: {'identifier': 'excavator_auto_dig'}
+[0.000060] (-) JobUnselected: {'identifier': 'excavator_ros2_bridge'}
+[0.000070] (excavator_viewer) JobQueued: {'identifier': 'excavator_viewer', 'dependencies': OrderedDict()}
+[0.000978] (excavator_viewer) JobStarted: {'identifier': 'excavator_viewer'}
+[0.007820] (excavator_viewer) JobProgress: {'identifier': 'excavator_viewer', 'progress': 'cmake'}
+[0.008697] (excavator_viewer) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/install/excavator_viewer'], 'cwd': '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'mimo-v2.5-pro'), ('AI_AGENT', 'claude-code/2.1.126/agent'), ('USER', 'ubuntu2204'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu2204/wslearning/install/learning_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('WT_PROFILE_ID', '{105cc6ab-b545-59f5-a471-953d1ec1a893}'), ('HOME', '/home/ubuntu2204'), ('OLDPWD', '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco'), ('NVM_BIN', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin'), ('NVM_INC', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'mimo-v2.5-pro'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('NVM_DIR', '/home/ubuntu2204/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu2204/wslearning/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu2204'), ('NAME', 'DESKTOP-BH77GIT'), ('WSL_INTEROP', '/run/WSL/127978_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ANTHROPIC_BASE_URL', 'https://token-plan-cn.xiaomimimo.com/anthropic'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'mimo-v2.5-pro'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/ubuntu2204/.local/bin:/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/f/VMWare/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/d/anaconda3:/mnt/d/anaconda3/Library/bin:/mnt/d/anaconda3/Library/mingw-w64/bin:/mnt/d/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/King/.cherrystudio/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nodejs/node_cache:/mnt/c/Program Files/CMake/bin:/mnt/f/MATLAB/R2015b/runtime/win32:/mnt/f/MATLAB/R2015b/bin:/mnt/f/MATLAB/R2015b/polyspace/bin:/mnt/d/CANdb++/Exec32:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/f/MatlabR2025b/runtime/win64:/mnt/f/MatlabR2025b/bin:/mnt/c/Program Files/Git LFS:/mnt/f/MatlabR2025b/bin/win64:/mnt/f/MatlabR2025b/extern/bin/win64:/mnt/f/Adams/bin:/mnt/c/Users/King/.mcuxpressotools/ninja-1.12.1:/mnt/c/Program Files/7-Zip:/mnt/c/Users/King/.mcuxpressotools/dtc-1.6.1/tools/usr/bin:/mnt/c/Users/King/.mcuxpressotools/gperf-3.0.1/bin:/mnt/c/Users/King/.mcuxpressotools/wget-1.21.4:/mnt/c/Users/King/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Users/King/AppData/Local/Programs/Ollama:/mnt/c/Users/King/.local/bin:/snap/bin:/home/ubuntu2204/.claude/plugins/cache/karpathy-skills/andrej-karpathy-skills/1.0.0/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('WT_SESSION', '96aa5fe0-07f2-44ca-8e61-888506d638b2'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'mimo-v2.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'tp-ciz43ytu0ckh4vfugdk03gq6fvllnayl5aftwmt7flh9nos6'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('ANTHROPIC_REASONING_MODEL', 'mimo-v2.5-pro'), ('PWD', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer'), ('TURTLEBOT3_MODEL', 'burger'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/ubuntu2204/wslearning/install/learning_urdf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_topic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_tf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_service/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_qos/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_pkg_python/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_parameter/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_node/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_launch/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_action/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_interface/local/lib/python3.10/dist-packages:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_gazebo/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.099813] (-) TimerEvent: {}
+[0.199993] (-) TimerEvent: {}
+[0.201043] (excavator_viewer) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300091] (-) TimerEvent: {}
+[0.400267] (-) TimerEvent: {}
+[0.500434] (-) TimerEvent: {}
+[0.600619] (-) TimerEvent: {}
+[0.700801] (-) TimerEvent: {}
+[0.754239] (excavator_viewer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 12.3.0\n'}
+[0.800909] (-) TimerEvent: {}
+[0.901117] (-) TimerEvent: {}
+[1.001314] (-) TimerEvent: {}
+[1.101500] (-) TimerEvent: {}
+[1.167336] (excavator_viewer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.201625] (-) TimerEvent: {}
+[1.301803] (-) TimerEvent: {}
+[1.322393] (excavator_viewer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.326989] (excavator_viewer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.327730] (excavator_viewer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.328201] (excavator_viewer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.330320] (excavator_viewer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.401909] (-) TimerEvent: {}
+[1.502082] (-) TimerEvent: {}
+[1.514738] (excavator_viewer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.519085] (excavator_viewer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.519246] (excavator_viewer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.519697] (excavator_viewer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.524824] (excavator_viewer) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.602178] (-) TimerEvent: {}
+[1.635534] (excavator_viewer) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.702288] (-) TimerEvent: {}
+[1.720173] (excavator_viewer) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.802435] (-) TimerEvent: {}
+[1.902637] (-) TimerEvent: {}
+[1.931211] (excavator_viewer) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.936822] (excavator_viewer) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.944355] (excavator_viewer) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.957363] (excavator_viewer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.973832] (excavator_viewer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.002759] (-) TimerEvent: {}
+[2.013948] (excavator_viewer) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.017717] (excavator_viewer) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.102867] (-) TimerEvent: {}
+[2.203046] (-) TimerEvent: {}
+[2.303228] (-) TimerEvent: {}
+[2.403418] (-) TimerEvent: {}
+[2.503619] (-) TimerEvent: {}
+[2.603853] (-) TimerEvent: {}
+[2.704027] (-) TimerEvent: {}
+[2.804203] (-) TimerEvent: {}
+[2.904382] (-) TimerEvent: {}
+[3.004554] (-) TimerEvent: {}
+[3.104731] (-) TimerEvent: {}
+[3.204938] (-) TimerEvent: {}
+[3.305126] (-) TimerEvent: {}
+[3.405310] (-) TimerEvent: {}
+[3.505488] (-) TimerEvent: {}
+[3.605680] (-) TimerEvent: {}
+[3.655859] (excavator_viewer) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.705787] (-) TimerEvent: {}
+[3.805948] (-) TimerEvent: {}
+[3.906109] (-) TimerEvent: {}
+[4.006282] (-) TimerEvent: {}
+[4.106451] (-) TimerEvent: {}
+[4.206624] (-) TimerEvent: {}
+[4.306791] (-) TimerEvent: {}
+[4.406977] (-) TimerEvent: {}
+[4.507187] (-) TimerEvent: {}
+[4.607358] (-) TimerEvent: {}
+[4.707534] (-) TimerEvent: {}
+[4.807708] (-) TimerEvent: {}
+[4.907903] (-) TimerEvent: {}
+[5.008071] (-) TimerEvent: {}
+[5.108256] (-) TimerEvent: {}
+[5.208459] (-) TimerEvent: {}
+[5.308728] (-) TimerEvent: {}
+[5.399096] (excavator_viewer) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.408849] (-) TimerEvent: {}
+[5.509027] (-) TimerEvent: {}
+[5.609192] (-) TimerEvent: {}
+[5.709387] (-) TimerEvent: {}
+[5.809556] (-) TimerEvent: {}
+[5.909744] (-) TimerEvent: {}
+[6.009918] (-) TimerEvent: {}
+[6.110140] (-) TimerEvent: {}
+[6.210319] (-) TimerEvent: {}
+[6.310498] (-) TimerEvent: {}
+[6.410714] (-) TimerEvent: {}
+[6.510891] (-) TimerEvent: {}
+[6.611062] (-) TimerEvent: {}
+[6.711231] (-) TimerEvent: {}
+[6.811395] (-) TimerEvent: {}
+[6.911580] (-) TimerEvent: {}
+[7.011785] (-) TimerEvent: {}
+[7.111961] (-) TimerEvent: {}
+[7.212130] (-) TimerEvent: {}
+[7.312306] (-) TimerEvent: {}
+[7.412485] (-) TimerEvent: {}
+[7.512674] (-) TimerEvent: {}
+[7.612864] (-) TimerEvent: {}
+[7.713033] (-) TimerEvent: {}
+[7.813306] (-) TimerEvent: {}
+[7.913493] (-) TimerEvent: {}
+[8.013664] (-) TimerEvent: {}
+[8.113837] (-) TimerEvent: {}
+[8.214033] (-) TimerEvent: {}
+[8.314235] (-) TimerEvent: {}
+[8.414432] (-) TimerEvent: {}
+[8.514614] (-) TimerEvent: {}
+[8.614786] (-) TimerEvent: {}
+[8.714958] (-) TimerEvent: {}
+[8.741799] (excavator_viewer) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.751481] (excavator_viewer) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.815056] (-) TimerEvent: {}
+[8.905355] (excavator_viewer) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.905643] (excavator_viewer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.915245] (-) TimerEvent: {}
+[9.015393] (-) TimerEvent: {}
+[9.057892] (excavator_viewer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.058955] (excavator_viewer) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.101879] (excavator_viewer) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[9.115500] (-) TimerEvent: {}
+[9.215669] (-) TimerEvent: {}
+[9.315840] (-) TimerEvent: {}
+[9.416011] (-) TimerEvent: {}
+[9.516185] (-) TimerEvent: {}
+[9.616343] (-) TimerEvent: {}
+[9.716511] (-) TimerEvent: {}
+[9.736702] (excavator_viewer) StderrLine: {'line': b'CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):\n'}
+[9.736847] (excavator_viewer) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[9.736896] (excavator_viewer) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[9.736933] (excavator_viewer) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[9.736969] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.737006] (excavator_viewer) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[9.737044] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.737080] (excavator_viewer) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[9.737117] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.737153] (excavator_viewer) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[9.737188] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.737225] (excavator_viewer) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[9.737333] (excavator_viewer) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[9.737442] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.737550] (excavator_viewer) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[9.737661] (excavator_viewer) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[9.737771] (excavator_viewer) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.737878] (excavator_viewer) StderrLine: {'line': b'  CMakeLists.txt:20 (find_package)\n'}
+[9.738116] (excavator_viewer) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[9.738176] (excavator_viewer) StderrLine: {'line': b'\n'}
+[9.738215] (excavator_viewer) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[9.788747] (excavator_viewer) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.797252] (excavator_viewer) StdoutLine: {'line': b'-- Generating done\n'}
+[9.799778] (excavator_viewer) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer\n'}
+[9.805823] (excavator_viewer) CommandEnded: {'returncode': 0}
+[9.806277] (excavator_viewer) JobProgress: {'identifier': 'excavator_viewer', 'progress': 'build'}
+[9.806763] (excavator_viewer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer', '--', '-j12', '-l12'], 'cwd': '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'mimo-v2.5-pro'), ('AI_AGENT', 'claude-code/2.1.126/agent'), ('USER', 'ubuntu2204'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu2204/wslearning/install/learning_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('WT_PROFILE_ID', '{105cc6ab-b545-59f5-a471-953d1ec1a893}'), ('HOME', '/home/ubuntu2204'), ('OLDPWD', '/home/ubuntu2204/mujoco_develop/excavator_simulator_mujoco'), ('NVM_BIN', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin'), ('NVM_INC', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'mimo-v2.5-pro'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('NVM_DIR', '/home/ubuntu2204/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu2204/wslearning/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu2204'), ('NAME', 'DESKTOP-BH77GIT'), ('WSL_INTEROP', '/run/WSL/127978_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ANTHROPIC_BASE_URL', 'https://token-plan-cn.xiaomimimo.com/anthropic'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'mimo-v2.5-pro'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/ubuntu2204/.local/bin:/home/ubuntu2204/.nvm/versions/node/v20.20.2/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/f/VMWare/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/d/anaconda3:/mnt/d/anaconda3/Library/bin:/mnt/d/anaconda3/Library/mingw-w64/bin:/mnt/d/anaconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/King/.cherrystudio/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nodejs/node_cache:/mnt/c/Program Files/CMake/bin:/mnt/f/MATLAB/R2015b/runtime/win32:/mnt/f/MATLAB/R2015b/bin:/mnt/f/MATLAB/R2015b/polyspace/bin:/mnt/d/CANdb++/Exec32:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/f/MatlabR2025b/runtime/win64:/mnt/f/MatlabR2025b/bin:/mnt/c/Program Files/Git LFS:/mnt/f/MatlabR2025b/bin/win64:/mnt/f/MatlabR2025b/extern/bin/win64:/mnt/f/Adams/bin:/mnt/c/Users/King/.mcuxpressotools/ninja-1.12.1:/mnt/c/Program Files/7-Zip:/mnt/c/Users/King/.mcuxpressotools/dtc-1.6.1/tools/usr/bin:/mnt/c/Users/King/.mcuxpressotools/gperf-3.0.1/bin:/mnt/c/Users/King/.mcuxpressotools/wget-1.21.4:/mnt/c/Users/King/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/King/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/King/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/King/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/King/.eide/tools/openocd_7a1adfbec_mingw32/bin:/mnt/c/Program Files/nodejs/node_global:/mnt/c/Users/King/AppData/Local/Programs/Ollama:/mnt/c/Users/King/.local/bin:/snap/bin:/home/ubuntu2204/.claude/plugins/cache/karpathy-skills/andrej-karpathy-skills/1.0.0/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('WT_SESSION', '96aa5fe0-07f2-44ca-8e61-888506d638b2'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'mimo-v2.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'tp-ciz43ytu0ckh4vfugdk03gq6fvllnayl5aftwmt7flh9nos6'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('ANTHROPIC_REASONING_MODEL', 'mimo-v2.5-pro'), ('PWD', '/home/ubuntu2204/mujoco_develop/excavator_ros2_ws/build/excavator_viewer'), ('TURTLEBOT3_MODEL', 'burger'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu2204/.nvm/versions/node/v20.20.2/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/ubuntu2204/wslearning/install/learning_urdf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_topic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_tf/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_service/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_qos/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_pkg_python/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_parameter/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_node/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_launch/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_action/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_interface/local/lib/python3.10/dist-packages:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_gazebo/lib/python3.10/site-packages:/home/ubuntu2204/wslearning/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ubuntu2204/wslearning/install/learning_topic_cpp:/home/ubuntu2204/wslearning/install/learning_tf_cpp:/home/ubuntu2204/wslearning/install/learning_service_cpp:/home/ubuntu2204/wslearning/install/learning_pkg_c:/home/ubuntu2204/wslearning/install/learning_parameter_cpp:/home/ubuntu2204/wslearning/install/learning_node_cpp:/home/ubuntu2204/wslearning/install/learning_action_cpp:/home/ubuntu2204/wslearning/install/learning_interface:/home/ubuntu2204/wslearning/install/learning_urdf:/home/ubuntu2204/wslearning/install/learning_topic:/home/ubuntu2204/wslearning/install/learning_tf:/home/ubuntu2204/wslearning/install/learning_service:/home/ubuntu2204/wslearning/install/learning_qos:/home/ubuntu2204/wslearning/install/learning_pkg_python:/home/ubuntu2204/wslearning/install/learning_parameter:/home/ubuntu2204/wslearning/install/learning_node:/home/ubuntu2204/wslearning/install/learning_launch:/home/ubuntu2204/wslearning/install/learning_action:/home/ubuntu2204/wslearning/install/learning_gazebo_harmonic:/home/ubuntu2204/wslearning/install/learning_gazebo:/home/ubuntu2204/wslearning/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[9.816622] (-) TimerEvent: {}
+[9.840206] (excavator_viewer) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/mujoco_viewer.dir/src/mujoco_viewer.cpp.o\n'}
+[9.916857] (-) TimerEvent: {}
+[10.017032] (-) TimerEvent: {}
+[10.117213] (-) TimerEvent: {}
+[10.217411] (-) TimerEvent: {}
+[10.317581] (-) TimerEvent: {}
+[10.417755] (-) TimerEvent: {}
+[10.517909] (-) TimerEvent: {}
+[10.618164] (-) TimerEvent: {}
+[10.718336] (-) TimerEvent: {}
+[10.818514] (-) TimerEvent: {}
+[10.918703] (-) TimerEvent: {}
+[11.018898] (-) TimerEvent: {}
+[11.119079] (-) TimerEvent: {}
+[11.219345] (-) TimerEvent: {}
+[11.319554] (-) TimerEvent: {}
+[11.419811] (-) TimerEvent: {}
+[11.520067] (-) TimerEvent: {}
+[11.620269] (-) TimerEvent: {}
+[11.720497] (-) TimerEvent: {}
+[11.820709] (-) TimerEvent: {}
+[11.920916] (-) TimerEvent: {}
+[12.021155] (-) TimerEvent: {}
+[12.121382] (-) TimerEvent: {}
+[12.221617] (-) TimerEvent: {}
+[12.321822] (-) TimerEvent: {}
+[12.422049] (-) TimerEvent: {}
+[12.522317] (-) TimerEvent: {}
+[12.622535] (-) TimerEvent: {}
+[12.722742] (-) TimerEvent: {}
+[12.822908] (-) TimerEvent: {}
+[12.923117] (-) TimerEvent: {}
+[13.023311] (-) TimerEvent: {}
+[13.123519] (-) TimerEvent: {}
+[13.223673] (-) TimerEvent: {}
+[13.323860] (-) TimerEvent: {}
+[13.424064] (-) TimerEvent: {}
+[13.524241] (-) TimerEvent: {}
+[13.624464] (-) TimerEvent: {}
+[13.724661] (-) TimerEvent: {}
+[13.824838] (-) TimerEvent: {}
+[13.925040] (-) TimerEvent: {}
+[14.025233] (-) TimerEvent: {}
+[14.125440] (-) TimerEvent: {}
+[14.225637] (-) TimerEvent: {}
+[14.325815] (-) TimerEvent: {}
+[14.426497] (-) TimerEvent: {}
+[14.526692] (-) TimerEvent: {}
+[14.626904] (-) TimerEvent: {}
+[14.727096] (-) TimerEvent: {}
+[14.827362] (-) TimerEvent: {}
+[14.927624] (-) TimerEvent: {}
+[15.027790] (-) TimerEvent: {}
+[15.127949] (-) TimerEvent: {}
+[15.228146] (-) TimerEvent: {}
+[15.328419] (-) TimerEvent: {}
+[15.428616] (-) TimerEvent: {}
+[15.528892] (-) TimerEvent: {}
+[15.629084] (-) TimerEvent: {}
+[15.729277] (-) TimerEvent: {}
+[15.829469] (-) TimerEvent: {}
+[15.929642] (-) TimerEvent: {}
+[16.029819] (-) TimerEvent: {}
+[16.129986] (-) TimerEvent: {}
+[16.230170] (-) TimerEvent: {}
+[16.330377] (-) TimerEvent: {}
+[16.430552] (-) TimerEvent: {}
+[16.530852] (-) TimerEvent: {}
+[16.631050] (-) TimerEvent: {}
+[16.731251] (-) TimerEvent: {}
+[16.831502] (-) TimerEvent: {}
+[16.931680] (-) TimerEvent: {}
+[17.031855] (-) TimerEvent: {}
+[17.132056] (-) TimerEvent: {}
+[17.232254] (-) TimerEvent: {}
+[17.332421] (-) TimerEvent: {}
+[17.432616] (-) TimerEvent: {}
+[17.532856] (-) TimerEvent: {}
+[17.533173] (excavator_viewer) StdoutLine: {'line': b'[100%] Linking CXX executable mujoco_viewer\n'}
+[17.632958] (-) TimerEvent: {}
+[17.733176] (-) TimerEvent: {}
+[17.742813] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwGrabErrorHandlerX11':\n"}
+[17.743026] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwGrabErrorHandlerX11+0x1a): undefined reference to `XSetErrorHandler'\n"}
+[17.743128] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwReleaseErrorHandlerX11':\n"}
+[17.743212] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwReleaseErrorHandlerX11+0x12): undefined reference to `XSync'\n"}
+[17.743285] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwReleaseErrorHandlerX11+0x1e): undefined reference to `XSetErrorHandler'\n"}
+[17.743359] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwInputErrorX11':\n"}
+[17.743426] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwInputErrorX11+0x30): undefined reference to `XGetErrorText'\n"}
+[17.743492] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwPlatformInit':\n"}
+[17.744465] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwPlatformInit+0x3c): undefined reference to `XInitThreads'\n"}
+[17.744502] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x41): undefined reference to `XrmInitialize'\n"}
+[17.744526] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x48): undefined reference to `XOpenDisplay'\n"}
+[17.744548] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x89): undefined reference to `XrmUniqueQuark'\n"}
+[17.744599] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x9c): undefined reference to `XResourceManagerString'\n"}
+[17.744641] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb5): undefined reference to `XrmGetStringDatabase'\n"}
+[17.744666] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xee): undefined reference to `XrmGetResource'\n"}
+[17.744696] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x138): undefined reference to `XrmDestroyDatabase'\n"}
+[17.744719] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x3fa): undefined reference to `XQueryExtension'\n"}
+[17.744741] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x8b0): undefined reference to `XkbQueryExtension'\n"}
+[17.744762] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x8d1): undefined reference to `XkbSetDetectableAutoRepeat'\n"}
+[17.744783] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x8fd): undefined reference to `XkbGetState'\n"}
+[17.744804] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x92e): undefined reference to `XkbSelectEventDetails'\n"}
+[17.744824] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xa4a): undefined reference to `XkbGetMap'\n"}
+[17.744843] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xa61): undefined reference to `XkbGetNames'\n"}
+[17.744864] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xa9f): undefined reference to `XkbFreeNames'\n"}
+[17.744884] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xaae): undefined reference to `XkbFreeKeyboard'\n"}
+[17.744903] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xac9): undefined reference to `XDisplayKeycodes'\n"}
+[17.744923] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xaea): undefined reference to `XGetKeyboardMapping'\n"}
+[17.744943] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb02): undefined reference to `XFree'\n"}
+[17.744967] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb17): undefined reference to `XInternAtom'\n"}
+[17.744987] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb33): undefined reference to `XInternAtom'\n"}
+[17.745034] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb4f): undefined reference to `XInternAtom'\n"}
+[17.745061] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb6b): undefined reference to `XInternAtom'\n"}
+[17.745084] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xb87): undefined reference to `XInternAtom'\n"}
+[17.745106] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o):x11_init.c:(.text._glfwPlatformInit+0xba3): more undefined references to `XInternAtom' follow\n"}
+[17.745129] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwPlatformInit':\n"}
+[17.745150] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwPlatformInit+0xf3d): undefined reference to `XSetErrorHandler'\n"}
+[17.745171] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xf82): undefined reference to `XSync'\n"}
+[17.745192] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xf8e): undefined reference to `XSetErrorHandler'\n"}
+[17.745214] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xfae): undefined reference to `XFree'\n"}
+[17.745234] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0xfb8): undefined reference to `XFree'\n"}
+[17.745254] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1004): undefined reference to `XInternAtom'\n"}
+[17.745273] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x103e): undefined reference to `XInternAtom'\n"}
+[17.745292] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1078): undefined reference to `XInternAtom'\n"}
+[17.745312] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x10b2): undefined reference to `XInternAtom'\n"}
+[17.745331] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x10ec): undefined reference to `XInternAtom'\n"}
+[17.745351] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o):x11_init.c:(.text._glfwPlatformInit+0x1126): more undefined references to `XInternAtom' follow\n"}
+[17.745372] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwPlatformInit':\n"}
+[17.745395] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwPlatformInit+0x1941): undefined reference to `XFree'\n"}
+[17.745414] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1995): undefined reference to `XCreateWindow'\n"}
+[17.745433] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1a7b): undefined reference to `XSupportsLocale'\n"}
+[17.745453] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1a8f): undefined reference to `XSetLocaleModifiers'\n"}
+[17.745473] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1aa1): undefined reference to `XOpenIM'\n"}
+[17.745493] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1ace): undefined reference to `XGetIMValues'\n"}
+[17.745513] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1b02): undefined reference to `XFree'\n"}
+[17.745532] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1b0e): undefined reference to `XCloseIM'\n"}
+[17.745551] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformInit+0x1bc0): undefined reference to `XFree'\n"}
+[17.745571] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_init.c.o): in function `_glfwPlatformTerminate':\n"}
+[17.745590] (excavator_viewer) StderrLine: {'line': b"x11_init.c:(.text._glfwPlatformTerminate+0x21): undefined reference to `XGetSelectionOwner'\n"}
+[17.745610] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformTerminate+0x45): undefined reference to `XDestroyWindow'\n"}
+[17.745629] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformTerminate+0x68): undefined reference to `XFreeCursor'\n"}
+[17.745649] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformTerminate+0x9c): undefined reference to `XCloseIM'\n"}
+[17.745668] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_init.c:(.text._glfwPlatformTerminate+0xb8): undefined reference to `XCloseDisplay'\n"}
+[17.745693] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_monitor.c.o): in function `_glfwPollMonitorsX11':\n"}
+[17.745721] (excavator_viewer) StderrLine: {'line': b"x11_monitor.c:(.text._glfwPollMonitorsX11+0x372): undefined reference to `XFree'\n"}
+[17.745741] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_monitor.c.o): in function `_glfwPlatformGetMonitorWorkarea':\n"}
+[17.745763] (excavator_viewer) StderrLine: {'line': b"x11_monitor.c:(.text._glfwPlatformGetMonitorWorkarea+0x235): undefined reference to `XFree'\n"}
+[17.745792] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_monitor.c:(.text._glfwPlatformGetMonitorWorkarea+0x244): undefined reference to `XFree'\n"}
+[17.745813] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwGetWindowPropertyX11':\n"}
+[17.745834] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwGetWindowPropertyX11+0x4f): undefined reference to `XGetWindowProperty'\n"}
+[17.745853] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPushSelectionToManagerX11':\n"}
+[17.745873] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPushSelectionToManagerX11+0x3b): undefined reference to `XConvertSelection'\n"}
+[17.745893] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPushSelectionToManagerX11+0x74): undefined reference to `XCheckIfEvent'\n"}
+[17.745914] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPushSelectionToManagerX11+0xb9): undefined reference to `XPending'\n"}
+[17.745934] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `handleSelectionRequest':\n"}
+[17.745956] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.handleSelectionRequest+0x167): undefined reference to `XGetWindowProperty'\n"}
+[17.745977] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.handleSelectionRequest+0x1dd): undefined reference to `XChangeProperty'\n"}
+[17.745997] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.handleSelectionRequest+0x250): undefined reference to `XChangeProperty'\n"}
+[17.746016] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.handleSelectionRequest+0x25e): undefined reference to `XFree'\n"}
+[17.746036] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.handleSelectionRequest+0x2d8): undefined reference to `XChangeProperty'\n"}
+[17.746057] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.handleSelectionRequest+0x334): undefined reference to `XSendEvent'\n"}
+[17.746077] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformCreateWindow':\n"}
+[17.746100] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformCreateWindow+0x154): undefined reference to `XCreateColormap'\n"}
+[17.746120] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x239): undefined reference to `XCreateWindow'\n"}
+[17.746140] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x26e): undefined reference to `XSaveContext'\n"}
+[17.746158] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x2c1): undefined reference to `XChangeProperty'\n"}
+[17.746225] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x38b): undefined reference to `XChangeProperty'\n"}
+[17.746249] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x3ca): undefined reference to `XSetWMProtocols'\n"}
+[17.746271] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x401): undefined reference to `XChangeProperty'\n"}
+[17.746291] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x446): undefined reference to `XChangeProperty'\n"}
+[17.746311] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x44f): undefined reference to `XAllocWMHints'\n"}
+[17.746332] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x47f): undefined reference to `XSetWMHints'\n"}
+[17.746351] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x487): undefined reference to `XFree'\n"}
+[17.746370] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x49b): undefined reference to `XAllocClassHint'\n"}
+[17.746390] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x536): undefined reference to `XSetClassHint'\n"}
+[17.746410] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x53e): undefined reference to `XFree'\n"}
+[17.746429] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x572): undefined reference to `XChangeProperty'\n"}
+[17.746449] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x5af): undefined reference to `Xutf8SetWMProperties'\n"}
+[17.746470] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x601): undefined reference to `XChangeProperty'\n"}
+[17.746490] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x661): undefined reference to `XChangeProperty'\n"}
+[17.746510] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x672): undefined reference to `XFlush'\n"}
+[17.746530] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x6ab): undefined reference to `XCreateIC'\n"}
+[17.746553] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x70f): undefined reference to `XGetICValues'\n"}
+[17.746573] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x735): undefined reference to `XSelectInput'\n"}
+[17.746593] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x762): undefined reference to `XTranslateCoordinates'\n"}
+[17.746613] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x795): undefined reference to `XGetWindowAttributes'\n"}
+[17.746633] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x86d): undefined reference to `XGetWindowAttributes'\n"}
+[17.746653] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x88b): undefined reference to `XMapWindow'\n"}
+[17.746673] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x8d9): undefined reference to `XGetWindowAttributes'\n"}
+[17.746693] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x8f7): undefined reference to `XMapWindow'\n"}
+[17.746714] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformCreateWindow+0x91b): undefined reference to `XFlush'\n"}
+[17.746736] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformShowWindow':\n"}
+[17.746757] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformShowWindow+0x26): undefined reference to `XGetWindowAttributes'\n"}
+[17.746788] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformShowWindow+0x40): undefined reference to `XMapWindow'\n"}
+[17.746812] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `updateWindowMode':\n"}
+[17.746833] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.updateWindowMode+0xe3): undefined reference to `XSendEvent'\n"}
+[17.746854] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x1a1): undefined reference to `XSendEvent'\n"}
+[17.746882] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x1cb): undefined reference to `XDeleteProperty'\n"}
+[17.746903] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x280): undefined reference to `XSendEvent'\n"}
+[17.746924] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x2b6): undefined reference to `XChangeWindowAttributes'\n"}
+[17.746943] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x305): undefined reference to `XChangeProperty'\n"}
+[17.746970] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x32e): undefined reference to `XChangeWindowAttributes'\n"}
+[17.746997] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateWindowMode+0x35d): undefined reference to `XDeleteProperty'\n"}
+[17.747039] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `acquireMonitor':\n"}
+[17.747062] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.acquireMonitor+0x81): undefined reference to `XMoveResizeWindow'\n"}
+[17.747083] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.acquireMonitor+0xbd): undefined reference to `XGetScreenSaver'\n"}
+[17.747104] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.acquireMonitor+0xd5): undefined reference to `XSetScreenSaver'\n"}
+[17.747127] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformFocusWindow':\n"}
+[17.747147] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformFocusWindow+0xb9): undefined reference to `XSendEvent'\n"}
+[17.747167] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformFocusWindow+0xd1): undefined reference to `XGetWindowAttributes'\n"}
+[17.747187] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformFocusWindow+0xeb): undefined reference to `XRaiseWindow'\n"}
+[17.747207] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformFocusWindow+0x105): undefined reference to `XSetInputFocus'\n"}
+[17.747227] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformFocusWindow+0x111): undefined reference to `XFlush'\n"}
+[17.747247] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformDestroyWindow':\n"}
+[17.747270] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformDestroyWindow+0x5f): undefined reference to `XDestroyIC'\n"}
+[17.747293] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0x9a): undefined reference to `XDeleteContext'\n"}
+[17.747324] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0xad): undefined reference to `XUnmapWindow'\n"}
+[17.747356] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0xc0): undefined reference to `XDestroyWindow'\n"}
+[17.747392] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0xe3): undefined reference to `XFreeColormap'\n"}
+[17.747427] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0x101): undefined reference to `XFlush'\n"}
+[17.747462] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformDestroyWindow+0x129): undefined reference to `XSetScreenSaver'\n"}
+[17.747496] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowTitle':\n"}
+[17.747535] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowTitle+0x47): undefined reference to `Xutf8SetWMProperties'\n"}
+[17.747570] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowTitle+0x8b): undefined reference to `XChangeProperty'\n"}
+[17.747600] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowTitle+0xd9): undefined reference to `XChangeProperty'\n"}
+[17.747630] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowTitle+0xf7): undefined reference to `XFlush'\n"}
+[17.747657] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowIcon':\n"}
+[17.747693] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowIcon+0x5c): undefined reference to `XDeleteProperty'\n"}
+[17.747715] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowIcon+0x19f): undefined reference to `XChangeProperty'\n"}
+[17.747768] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowIcon+0x1cc): undefined reference to `XFlush'\n"}
+[17.747821] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetWindowPos':\n"}
+[17.747846] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetWindowPos+0x41): undefined reference to `XTranslateCoordinates'\n"}
+[17.747871] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowPos':\n"}
+[17.747902] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowPos+0x34): undefined reference to `XGetWindowAttributes'\n"}
+[17.747924] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0x40): undefined reference to `XAllocSizeHints'\n"}
+[17.747945] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0x5f): undefined reference to `XGetWMNormalHints'\n"}
+[17.747974] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0x86): undefined reference to `XSetWMNormalHints'\n"}
+[17.748004] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0x8e): undefined reference to `XFree'\n"}
+[17.748025] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0xa8): undefined reference to `XMoveWindow'\n"}
+[17.748045] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowPos+0xb5): undefined reference to `XFlush'\n"}
+[17.748066] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWindowVisible':\n"}
+[17.748087] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWindowVisible+0x23): undefined reference to `XGetWindowAttributes'\n"}
+[17.748107] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetWindowSize':\n"}
+[17.748127] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetWindowSize+0x2c): undefined reference to `XGetWindowAttributes'\n"}
+[17.748147] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowSize':\n"}
+[17.748179] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowSize+0x56): undefined reference to `XResizeWindow'\n"}
+[17.748214] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowSize+0x6d): undefined reference to `XFlush'\n"}
+[17.748238] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `updateNormalHints':\n"}
+[17.748261] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.updateNormalHints+0x10): undefined reference to `XAllocSizeHints'\n"}
+[17.748283] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateNormalHints+0x42): undefined reference to `XSetWMNormalHints'\n"}
+[17.748304] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.updateNormalHints+0x54): undefined reference to `XFree'\n"}
+[17.748326] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowSizeLimits':\n"}
+[17.748348] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowSizeLimits+0x26): undefined reference to `XGetWindowAttributes'\n"}
+[17.748369] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowSizeLimits+0x42): undefined reference to `XFlush'\n"}
+[17.748388] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowAspectRatio':\n"}
+[17.748409] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowAspectRatio+0x26): undefined reference to `XGetWindowAttributes'\n"}
+[17.748431] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowAspectRatio+0x42): undefined reference to `XFlush'\n"}
+[17.748451] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetFramebufferSize':\n"}
+[17.748471] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetFramebufferSize+0x2c): undefined reference to `XGetWindowAttributes'\n"}
+[17.748492] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetWindowFrameSize':\n"}
+[17.748512] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x6d): undefined reference to `XGetWindowAttributes'\n"}
+[17.748531] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x145): undefined reference to `XSendEvent'\n"}
+[17.748550] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x163): undefined reference to `XCheckIfEvent'\n"}
+[17.748570] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x1c6): undefined reference to `XGetWindowProperty'\n"}
+[17.748590] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x22a): undefined reference to `XFree'\n"}
+[17.748610] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x259): undefined reference to `XCheckIfEvent'\n"}
+[17.748630] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x27c): undefined reference to `XPending'\n"}
+[17.748650] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowFrameSize+0x2ac): undefined reference to `XPending'\n"}
+[17.748668] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformIconifyWindow':\n"}
+[17.748688] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformIconifyWindow+0x3d): undefined reference to `XIconifyWindow'\n"}
+[17.748708] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformIconifyWindow+0x4a): undefined reference to `XFlush'\n"}
+[17.748727] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformRestoreWindow':\n"}
+[17.748748] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformRestoreWindow+0x92): undefined reference to `XGetWindowProperty'\n"}
+[17.748768] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0xa9): undefined reference to `XFree'\n"}
+[17.748787] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0xc1): undefined reference to `XMapWindow'\n"}
+[17.748806] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0xd8): undefined reference to `XFree'\n"}
+[17.748826] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0xf0): undefined reference to `XGetWindowAttributes'\n"}
+[17.748846] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0x1cf): undefined reference to `XSendEvent'\n"}
+[17.748866] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformRestoreWindow+0x1db): undefined reference to `XFlush'\n"}
+[17.748886] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWindowIconified':\n"}
+[17.748906] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWindowIconified+0x63): undefined reference to `XGetWindowProperty'\n"}
+[17.748929] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformWindowIconified+0x82): undefined reference to `XFree'\n"}
+[17.748958] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `waitForVisibilityNotify':\n"}
+[17.748991] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.waitForVisibilityNotify+0x3a): undefined reference to `XCheckTypedWindowEvent'\n"}
+[17.749070] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.waitForVisibilityNotify+0x7f): undefined reference to `XCheckTypedWindowEvent'\n"}
+[17.749291] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.waitForVisibilityNotify+0xb9): undefined reference to `XPending'\n"}
+[17.749339] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformMaximizeWindow':\n"}
+[17.749394] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformMaximizeWindow+0x5d): undefined reference to `XGetWindowAttributes'\n"}
+[17.749431] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformMaximizeWindow+0x11e): undefined reference to `XSendEvent'\n"}
+[17.749461] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformMaximizeWindow+0x178): undefined reference to `XGetWindowProperty'\n"}
+[17.749485] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformMaximizeWindow+0x1fa): undefined reference to `XFree'\n"}
+[17.749530] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformMaximizeWindow+0x22f): undefined reference to `XChangeProperty'\n"}
+[17.749555] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformMaximizeWindow+0x240): undefined reference to `XFlush'\n"}
+[17.749577] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformHideWindow':\n"}
+[17.749600] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformHideWindow+0x1a): undefined reference to `XUnmapWindow'\n"}
+[17.749630] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformHideWindow+0x27): undefined reference to `XFlush'\n"}
+[17.749661] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformRequestWindowAttention':\n"}
+[17.749695] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformRequestWindowAttention+0xc8): undefined reference to `XSendEvent'\n"}
+[17.749725] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowMonitor':\n"}
+[17.749796] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x96): undefined reference to `XChangeProperty'\n"}
+[17.749823] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0xf4): undefined reference to `XSetScreenSaver'\n"}
+[17.749854] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x133): undefined reference to `XGetWindowAttributes'\n"}
+[17.749887] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x14d): undefined reference to `XMapRaised'\n"}
+[17.749910] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x1b7): undefined reference to `XMoveResizeWindow'\n"}
+[17.749934] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x1ca): undefined reference to `XFlush'\n"}
+[17.749956] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x215): undefined reference to `XMoveResizeWindow'\n"}
+[17.749977] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowMonitor+0x239): undefined reference to `XFlush'\n"}
+[17.749998] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowDecorated':\n"}
+[17.750039] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowDecorated+0x58): undefined reference to `XChangeProperty'\n"}
+[17.750067] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowFloating':\n"}
+[17.750091] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowFloating+0x4f): undefined reference to `XGetWindowAttributes'\n"}
+[17.750123] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowFloating+0x114): undefined reference to `XSendEvent'\n"}
+[17.750149] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowFloating+0x167): undefined reference to `XGetWindowProperty'\n"}
+[17.750172] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowFloating+0x20a): undefined reference to `XChangeProperty'\n"}
+[17.750197] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowFloating+0x21f): undefined reference to `XFree'\n"}
+[17.750227] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetWindowFloating+0x22b): undefined reference to `XFlush'\n"}
+[17.750405] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWindowFocused':\n"}
+[17.750444] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWindowFocused+0x1f): undefined reference to `XGetInputFocus'\n"}
+[17.750520] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWindowMaximized':\n"}
+[17.750749] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWindowMaximized+0x82): undefined reference to `XGetWindowProperty'\n"}
+[17.750794] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformWindowMaximized+0xd6): undefined reference to `XFree'\n"}
+[17.750819] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWindowHovered':\n"}
+[17.750843] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWindowHovered+0x95): undefined reference to `XQueryPointer'\n"}
+[17.750866] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformFramebufferTransparent':\n"}
+[17.750888] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformFramebufferTransparent+0x20): undefined reference to `XGetSelectionOwner'\n"}
+[17.750913] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowResizable':\n"}
+[17.750934] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowResizable+0x26): undefined reference to `XGetWindowAttributes'\n"}
+[17.750957] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetWindowOpacity':\n"}
+[17.750977] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetWindowOpacity+0x20): undefined reference to `XGetSelectionOwner'\n"}
+[17.750998] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowOpacity+0x7a): undefined reference to `XGetWindowProperty'\n"}
+[17.751018] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformGetWindowOpacity+0xc8): undefined reference to `XFree'\n"}
+[17.751038] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetWindowOpacity':\n"}
+[17.751057] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetWindowOpacity+0x4d): undefined reference to `XChangeProperty'\n"}
+[17.751077] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformPollEvents':\n"}
+[17.751097] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformPollEvents+0x53): undefined reference to `XPending'\n"}
+[17.751117] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x60): undefined reference to `XQLength'\n"}
+[17.751137] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x99): undefined reference to `XQLength'\n"}
+[17.751157] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xb1): undefined reference to `XNextEvent'\n"}
+[17.751203] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xe9): undefined reference to `XFilterEvent'\n"}
+[17.751232] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x1b4): undefined reference to `XGetEventData'\n"}
+[17.751254] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x218): undefined reference to `XFreeEventData'\n"}
+[17.751280] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x255): undefined reference to `XFindContext'\n"}
+[17.751309] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x370): undefined reference to `Xutf8LookupString'\n"}
+[17.751330] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x580): undefined reference to `XDefineCursor'\n"}
+[17.751351] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x60f): undefined reference to `XSetICFocus'\n"}
+[17.751370] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x662): undefined reference to `XUnsetICFocus'\n"}
+[17.751391] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x792): undefined reference to `XTranslateCoordinates'\n"}
+[17.751413] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x864): undefined reference to `XGetWindowProperty'\n"}
+[17.751434] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x880): undefined reference to `XFree'\n"}
+[17.751454] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x919): undefined reference to `XSetScreenSaver'\n"}
+[17.751476] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x978): undefined reference to `XGetWindowProperty'\n"}
+[17.751500] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x9eb): undefined reference to `XFree'\n"}
+[17.751521] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xac5): undefined reference to `XSendEvent'\n"}
+[17.751540] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xad2): undefined reference to `XFlush'\n"}
+[17.751560] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xb42): undefined reference to `XLookupString'\n"}
+[17.751580] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xb95): undefined reference to `XEventsQueued'\n"}
+[17.751599] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xbad): undefined reference to `XPeekEvent'\n"}
+[17.751619] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xd9d): undefined reference to `XGetWindowProperty'\n"}
+[17.751643] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xdf1): undefined reference to `Xutf8LookupString'\n"}
+[17.751718] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xeba): undefined reference to `XIconifyWindow'\n"}
+[17.752070] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xec7): undefined reference to `XFlush'\n"}
+[17.753865] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xf5b): undefined reference to `XSendEvent'\n"}
+[17.753956] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0xfbe): undefined reference to `XTranslateCoordinates'\n"}
+[17.754047] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x110f): undefined reference to `XFree'\n"}
+[17.754123] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x1216): undefined reference to `XConvertSelection'\n"}
+[17.754197] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x1245): undefined reference to `XGetWindowAttributes'\n"}
+[17.754272] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x12ac): undefined reference to `XWarpPointer'\n"}
+[17.754595] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x12bd): undefined reference to `XFlush'\n"}
+[17.754678] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformPollEvents+0x12ca): undefined reference to `XFlush'\n"}
+[17.754754] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetCursorPos':\n"}
+[17.754830] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetCursorPos+0x43): undefined reference to `XWarpPointer'\n"}
+[17.754909] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursorPos+0x54): undefined reference to `XFlush'\n"}
+[17.755011] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWaitEvents':\n"}
+[17.755106] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWaitEvents+0x5f): undefined reference to `XPending'\n"}
+[17.755182] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformWaitEvents+0x6f): undefined reference to `XPending'\n"}
+[17.755257] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformWaitEvents+0x94): undefined reference to `XPending'\n"}
+[17.755332] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformWaitEventsTimeout':\n"}
+[17.755407] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformWaitEventsTimeout+0x6a): undefined reference to `XPending'\n"}
+[17.755532] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformWaitEventsTimeout+0x7a): undefined reference to `XPending'\n"}
+[17.755677] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o):x11_window.c:(.text._glfwPlatformWaitEventsTimeout+0xa9): more undefined references to `XPending' follow\n"}
+[17.755855] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetCursorPos':\n"}
+[17.755938] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetCursorPos+0x55): undefined reference to `XQueryPointer'\n"}
+[17.756014] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetCursorMode':\n"}
+[17.756092] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetCursorMode+0x27): undefined reference to `XGetInputFocus'\n"}
+[17.756167] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursorMode+0x91): undefined reference to `XDefineCursor'\n"}
+[17.756243] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursorMode+0xa4): undefined reference to `XFlush'\n"}
+[17.756319] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursorMode+0xaf): undefined reference to `XUndefineCursor'\n"}
+[17.756395] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `disableCursor':\n"}
+[17.756472] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.disableCursor+0xa6): undefined reference to `XQueryPointer'\n"}
+[17.756587] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.disableCursor+0x108): undefined reference to `XDefineCursor'\n"}
+[17.756685] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.disableCursor+0x10f): undefined reference to `XUndefineCursor'\n"}
+[17.756832] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.disableCursor+0x14e): undefined reference to `XGrabPointer'\n"}
+[17.756925] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `enableCursor':\n"}
+[17.757028] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.enableCursor+0x72): undefined reference to `XUngrabPointer'\n"}
+[17.757142] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.enableCursor+0xb7): undefined reference to `XWarpPointer'\n"}
+[17.757391] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.enableCursor+0xc7): undefined reference to `XFlush'\n"}
+[17.757602] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.enableCursor+0x107): undefined reference to `XDefineCursor'\n"}
+[17.757701] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.enableCursor+0x114): undefined reference to `XUndefineCursor'\n"}
+[17.757835] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetScancodeName':\n"}
+[17.757917] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetScancodeName+0x47): undefined reference to `XkbKeycodeToKeysym'\n"}
+[17.758002] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformCreateStandardCursor':\n"}
+[17.758092] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformCreateStandardCursor+0x30): undefined reference to `XCreateFontCursor'\n"}
+[17.758168] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformDestroyCursor':\n"}
+[17.758244] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformDestroyCursor+0x18): undefined reference to `XFreeCursor'\n"}
+[17.758320] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetCursor':\n"}
+[17.758396] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetCursor+0x30): undefined reference to `XDefineCursor'\n"}
+[17.758427] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursor+0x3d): undefined reference to `XFlush'\n"}
+[17.758453] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursor+0x44): undefined reference to `XUndefineCursor'\n"}
+[17.758711] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetCursor+0x51): undefined reference to `XFlush'\n"}
+[17.758946] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformSetClipboardString':\n"}
+[17.759154] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformSetClipboardString+0x3e): undefined reference to `XSetSelectionOwner'\n"}
+[17.759262] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text._glfwPlatformSetClipboardString+0x51): undefined reference to `XGetSelectionOwner'\n"}
+[17.759357] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `getSelectionString':\n"}
+[17.759456] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.getSelectionString+0x4f): undefined reference to `XGetSelectionOwner'\n"}
+[17.759553] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0xac): undefined reference to `XConvertSelection'\n"}
+[17.759649] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0xc7): undefined reference to `XCheckTypedWindowEvent'\n"}
+[17.760026] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0xf8): undefined reference to `XPending'\n"}
+[17.760217] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x159): undefined reference to `XCheckIfEvent'\n"}
+[17.760316] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x1a7): undefined reference to `XGetWindowProperty'\n"}
+[17.760413] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x216): undefined reference to `XCheckIfEvent'\n"}
+[17.760522] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x248): undefined reference to `XPending'\n"}
+[17.760619] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x286): undefined reference to `XFree'\n"}
+[17.760719] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x2d4): undefined reference to `XGetWindowProperty'\n"}
+[17.760821] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.getSelectionString+0x4b6): undefined reference to `XFree'\n"}
+[17.760919] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `_glfwPlatformGetPhysicalDevicePresentationSupport':\n"}
+[17.761038] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text._glfwPlatformGetPhysicalDevicePresentationSupport+0x37): undefined reference to `XVisualIDFromVisual'\n"}
+[17.761129] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(x11_window.c.o): in function `glfwSetX11SelectionString':\n"}
+[17.761205] (excavator_viewer) StderrLine: {'line': b"x11_window.c:(.text.glfwSetX11SelectionString+0x46): undefined reference to `XSetSelectionOwner'\n"}
+[17.761269] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: x11_window.c:(.text.glfwSetX11SelectionString+0x59): undefined reference to `XGetSelectionOwner'\n"}
+[17.761344] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(glx_context.c.o): in function `chooseGLXFBConfig':\n"}
+[17.761420] (excavator_viewer) StderrLine: {'line': b"glx_context.c:(.text.chooseGLXFBConfig+0x18a): undefined reference to `XFree'\n"}
+[17.761495] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: glx_context.c:(.text.chooseGLXFBConfig+0x3dd): undefined reference to `XFree'\n"}
+[17.761562] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(glx_context.c.o): in function `_glfwChooseVisualGLX':\n"}
+[17.761643] (excavator_viewer) StderrLine: {'line': b"glx_context.c:(.text._glfwChooseVisualGLX+0x46): undefined reference to `XFree'\n"}
+[17.761719] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(egl_context.c.o): in function `chooseEGLConfig':\n"}
+[17.761794] (excavator_viewer) StderrLine: {'line': b"egl_context.c:(.text.chooseEGLConfig+0x2ba): undefined reference to `XGetVisualInfo'\n"}
+[17.761876] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: egl_context.c:(.text.chooseEGLConfig+0x2e6): undefined reference to `XFree'\n"}
+[17.761951] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: /home/ubuntu2204/mujoco_develop/excavator_ros2_ws/src/excavator_viewer/../../../excavator_simulator_mujoco/build/lib/libglfw3.a(egl_context.c.o): in function `_glfwChooseVisualEGL':\n"}
+[17.762024] (excavator_viewer) StderrLine: {'line': b"egl_context.c:(.text._glfwChooseVisualEGL+0x80): undefined reference to `XGetVisualInfo'\n"}
+[17.762126] (excavator_viewer) StderrLine: {'line': b"/usr/bin/ld: egl_context.c:(.text._glfwChooseVisualEGL+0x99): undefined reference to `XFree'\n"}
+[17.762232] (excavator_viewer) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[17.762331] (excavator_viewer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mujoco_viewer.dir/build.make:176: mujoco_viewer] Error 1\n'}
+[17.762433] (excavator_viewer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mujoco_viewer.dir/all] Error 2\n'}
+[17.762531] (excavator_viewer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.762630] (excavator_viewer) CommandEnded: {'returncode': 2}
+[17.768474] (excavator_viewer) JobEnded: {'identifier': 'excavator_viewer', 'rc': 2}
+[17.778845] (-) EventReactorShutdown: {}
